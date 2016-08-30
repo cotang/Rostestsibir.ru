@@ -1,0 +1,58 @@
+include ../abstracts/bemto/bemto.pug
+
+// Left sidebar
++b.ASIDE.sidebar--left
+  //Random gratitude 
+  +e.gratitude
+    +e.H3.title--left Благодарственные письма
+    +e.gratitude-slide
+      +e.A.img(href="#")
+        img(src="http://rostestsibir.ru/wp-content/gallery/otzyvy/thumbs/thumbs_p6-1.jpg", alt="gratitude", title="gratitude")
+    +e.A.link-all(href="#") Смотреть все
+  // News
+  +e.news
+    +e.H3.title--left Новости
+    +b.news-item
+      +e.H3.title 
+        +e.A.link(href="#") 16 августа на сайте ЕЭК было опубликовано решение, изменяющее некоторые требования ТР ТС на автомобильный транспорт
+      +e.date 19.08.2016
+      +e.content 16 августа текущего года на сайте Евразийской экономической комиссии было опубликовано решение Совета Евразийской экономической комиссии № 56 «О внесении     
+      +e.A.link-more(href="#") Читать далее...
+    +b.news-item
+      +e.H3.title 
+        +e.A.link(href="#") С января 2018 года в силу вступает технический регламент, который будет действовать в отношении сжиженных углеводородных газов
+      +e.date 11.08.2016
+      +e.content С января 2018 года на территории всех стан ЕАЭС в силу вступает технический регламент, который будет действовать в отношении сжиженных     
+      +e.A.link-more(href="#") Читать далее...
+  // Subscribe
+  +e.subscribe
+    +e.H3.title--left Подписывайтесь
+    +e.P.subscribe-text Будьте в курсе последних новостей в мире сертификации продукции и услуг.
+    +b.FORM.form--subscribe(action="", method="", id= "subscribe")
+      .form-group.field-question-email.required
+        +e.INPUT.input(type='email', name='Email', placeholder='Введите ваш e-mail*')
+        p.help-block.help-block-error Ошибка заполнения поля
+      +e.button-wrapper
+        +b.BUTTON.btn--subscribe(type="submit") Подписаться
+        +b.BUTTON.btn--unsubscribe(type="submit") Отписаться
+  //Review random
+  +e.review
+    +e.H3.title--left Отзывы
+    +b.review-item
+      +e.text - Огромное спасибо сотрудникам компании "Ростест" успехав вам и процветания. Отдельно хочу поблагодарить Терентьеву Марьяну за оформление СБКТС на авто из Киргизии.
+      +e.person РГ "АСК" г.Абакан
+    +e.A.link-all(href="#") Читать все отзывы
+  //Shares
+  +e.shares
+    +e.H3.title--left Добавляйтесь
+    +e.A.link-all(href="#") Пользуетесь Яндексом? Установите наш виджет!
+    +e.shares-list
+      +b.A.share-link(href="#")
+      +b.A.share-link(href="#")
+      +b.A.share-link(href="#")
+      +b.A.share-link(href="#")
+      +b.A.share-link(href="#")
+
+
+
+

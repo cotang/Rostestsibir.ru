@@ -1,0 +1,13 @@
+.content{
+  text-align: left;
+  &__share{
+    text-align: center;
+  }
+  &__share-inner{
+    display: inline-block;
+    border: 1px solid $pale-orange;
+    padding: 5px 15px;
+    border-radius: 4px;
+  }
+
+}

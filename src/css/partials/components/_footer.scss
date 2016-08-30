@@ -1,0 +1,76 @@
+.footer{
+  padding: 20px 0;
+  background-image: $orange-gradient;
+  background-repeat: repeat-y; 
+  background-position: 50% 0;
+  // @include mq($from:xs, $until:sm){
+  //   padding: 0;
+  // } 
+  &__info{
+    @include mq($from:xs, $until:xl){
+      width: 100%;
+    }
+  }
+  .logo{
+    display: inline-block;
+    margin-right: 20px;
+  }
+  &__copyright{
+    display: inline-block;
+    vertical-align: middle;
+    color: $white;
+    p{
+      margin: 10px 0;
+    }
+  }
+}
+
+.partners{
+  text-align: center;
+  margin: 20px 0;
+
+  &__title{
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: $font-size;
+    font-weight: $regular;
+    &:before{
+      content: none;
+    }
+  }
+  &__banners{
+    max-width: 800px;
+    margin: 0 auto;    
+  }
+  &__icon{
+    display: inline-block;
+    margin: 10px 20px;
+  }
+}
+
+.counters{
+  margin: 20px 0;
+  span{
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: wheat;
+  }
+}
+.up{  
+  display: block;
+  padding-top: 2px;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  position: fixed;
+  bottom: -2px;
+  right: 50px;
+  font-family: $font-family--calibri;
+  background-color: $light-orange;
+  border: 2px solid $dark-orange;
+  border-radius: 5px 5px 0 0;
+  color: $white;
+}

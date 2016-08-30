@@ -1,0 +1,118 @@
+.header{
+  text-align: center;
+  background-image: $orange-gradient;
+  background-repeat: repeat-y; 
+  background-position: 50% 0;
+
+  &__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+   
+  &__gallery{  
+    margin-top: 20px;       
+  }
+  &__btn{
+    @include mq($from:xs, $until:lg){
+      margin-bottom: 20px;
+    } 
+  }
+}
+
+
+.search{
+  margin: 10px;
+
+  &__label{
+    position: relative;    
+   &:before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include sprite($s-loupe); 
+   }
+  }
+  &__input{
+    width: 280px;
+    font-size: $font-size-small;
+    padding: 10px 15px;
+    border: 1px solid $light-orange;
+    border-radius: 5px;
+  
+    &:hover, &:focus{
+      outline: none;
+    }
+    &:focus::-webkit-input-placeholder{
+      color: transparent;         
+    }       
+    &:focus::placeholder{
+      color: transparent;         
+    }    
+  }
+}
+
+.logo{
+  display: inline-block;
+  @include mq($from:xs, $until:lg){
+    margin-top: 20px;
+  } 
+}
+.flags{
+  margin: 10px;
+  &__icon{
+    display: inline-block;
+    vertical-align: bottom;
+    &--ru{
+      @include sprite($s-ru);
+    }
+    &--en{
+      @include sprite($s-en);
+    }
+  }
+}
+
+.city{
+  &__name{
+    display: inline-block;
+    @include mq($from:xs, $until:xl){
+      display: block;
+    }     
+  }
+  &__tel{
+    margin: 0 10px;
+  }
+}
+
+
+.slick-dots{
+  padding-left: 0;
+  li{
+    display: inline-block;
+  }
+}
+.slick-dots button{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: transparent;
+  color: transparent;
+  border: 1px solid $bg-white;
+  border-radius: 50%;
+  outline: none; 
+  padding: 0;  
+  @include transition();
+  
+  &:hover{
+    background-color: $bg-white;    
+  }
+}
+.slick-dots .slick-active button{
+  background-color: $bg-white;
+  border: 1px solid $dark-orange;
+}

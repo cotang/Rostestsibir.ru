@@ -1,0 +1,239 @@
+include ../abstracts/bemto/bemto.pug
+
+// Header
++b.HEADER.header
+  .container-fluid
+    .row
+      .col-xs-12
+        +e.wrapper
+          // Search
+          +b.search
+            +e.FORM.form(action='', method='', id= 'form--search')
+              +e.LABEL.label
+                +e.INPUT.input(type='text', name='Поиск', placeholder='Введите ваш запрос')
+          // Flags
+          +b.flags
+            +e.A.icon--ru(href="#")
+            +e.A.icon--en(href="#")
+    .row.bg-transparent
+      .col-xs-12.col-lg-4.col-xl-3.flex-center
+        // Logo
+        +b.A.logo(href="index.html")       
+          img(src="img/logo-ru.png", alt="logo", title="logo")
+      .col-xs-12.col-lg-5.col-xl-6
+        // Gallery
+        +e.gallery
+          +b.city
+            +e.name Новосибирск
+            +e.A.tel(href="tel:+73833102045", target="_blank") +7 (383) 310-20-45
+            +e.A.email(href="mailto:info@rostestsibir.ru", target="_blank") info@rostestsibir.ru
+          +b.city
+            +e.name Барнаул
+            +e.A.tel(href="tel:+73852252847", target="_blank") +7 (3852) 25-28-47
+            +e.A.email(href="mailto:22@rostestsibir.ru", target="_blank") 22@rostestsibir.ru
+          +b.city
+            +e.name Иркутск
+            +e.A.tel(href="tel:+73952781026", target="_blank") +7 (3952) 78-10-26
+            +e.A.email(href="mailto:38@rostestsibir.ru", target="_blank") 38@rostestsibir.ru
+          +b.city
+            +e.name Омск
+            +e.A.tel(href="tel:+73812356657", target="_blank") +7 (3812) 35-66-57
+            +e.A.email(href="mailto:55@rostestsibir.ru", target="_blank") 55@rostestsibir.ru
+          +b.city
+            +e.name Красноярск
+            +e.A.tel(href="tel:+73912540843", target="_blank") +7 (3912) 54-08-43
+            +e.A.email(href="mailto:24@rostestsibir.ru", target="_blank") 24@rostestsibir.ru
+      .col-xs-12.col-lg-3.col-xl-3.flex-center
+        +e.btn 
+          +b.A.btn--question(href="#") Задать вопрос
+            +e.icon
+  // Nav menu
+  +b.NAV.nav          
+    .container-fluid          
+      .row
+        .col-xs-12
+          +e.hamburger
+            +b.A.hamburger(href="#")
+              span
+        .col-xs-12.col-xl-8.offset-xl-2 
+          +e.wrapper   
+            +e.UL.list
+              +e.item 
+                +e.link--active(href="page.html") Сертификация
+                +b.UL.dropdown-menu
+                  +e.item 
+                    +b.UL.submenu
+                      +e.item 
+                        +e.link(href="page.html") Сертификация в Новосибирске
+                      +e.item 
+                        +e.link(href="page.html") Схема сертификации
+                      +e.item 
+                        +e.link(href="page.html") Сертификация в деталях
+                      +e.item
+                        +e.link(href="page.html") Сертификат соответствия ГОСТ Р
+                      +e.item 
+                        +e.link(href="page.html") Сертификат ТР ТС
+                      +e.item
+                        +e.link(href="page.html") Сертификат происхождения
+                  +e.item 
+                    +b.UL.submenu
+                      +e.item 
+                        +e.link(href="page.html") Фитосанитарный сертификат
+                      +e.item 
+                        +e.link(href="page.html") Сертификат технического регламента
+                      +e.item 
+                        +e.link(href="page.html") Сертификат на оборудование
+                      +e.item
+                        +e.link(href="page.html") Пожарный сертификат
+                      +e.item 
+                        +e.link(href="page.html") Сертификат взрывозащиты
+                      +e.item
+                        +e.link(href="page.html") Сертификат Минсвязи
+                  +e.item 
+                    +b.UL.submenu
+                      +e.item 
+                        +e.link(href="page.html") Сертификат ИСО (ISO)
+                      +e.item 
+                        +e.link(href="page.html") Сертификат ГОСТ Р ИСО (ISO) 9001
+                      +e.item 
+                        +e.link(href="page.html") Сертификат OHSAS 18001
+                      +e.item
+                        +e.link(href="page.html") Сертификат ИСО 14001
+                      +e.item 
+                        +e.link(href="page.html") Сертификат ИСО 22000
+                      +e.item
+                        +e.link(href="page.html") Сертификат ХАССП (HACCP)
+                  +e.item
+                    +b.UL.submenu
+                      +e.item 
+                        +e.link(href="page.html") Сертификация по охране труда
+                      +e.item 
+                        +e.link(href="page.html") Сертификат УкрСЕПРО
+                      +e.item 
+                        +e.link(href="page.html") Сертификация СРО
+                      +e.item
+                        +e.link(href="page.html") Цель и схема оформления сертификата СЕ
+                      +e.item 
+                        +e.link(href="page.html") Экологический сертификат
+                  +e.item
+                    +b.UL.submenu
+                      +e.item 
+                        +e.link(href="page.html") Сертификат Евро 5 и СБКТС
+                      +e.item 
+                        +e.link(href="page.html") Сертификация RoHS
+                      +e.item 
+                        +e.link(href="page.html") Сертификация услуг
+                      +e.item
+                        +e.link(href="page.html") Сертификат соответствия безопасности
+              +e.item 
+                +e.link(href="page.html") Декларирование
+                +b.UL.dropdown-menu
+                  +e.item 
+                    +e.link(href="page.html") Декларация соответствия по ГОСТ Р
+                  +e.item 
+                    +e.link(href="page.html") Декларация ТР ТС
+                  +e.item 
+                    +e.link(href="page.html") Декларация СЕ
+                  +e.item
+                    +e.link(href="page.html") Декларация о соответствии техническому регламенту
+                  +e.item
+                    +e.link(href="page.html") Декларация о соответствии пищевой продукции
+              +e.item
+                +e.link(href="page.html") Лицензирование
+                +b.UL.dropdown-menu
+                  +e.item 
+                    +e.link(href="page.html") Виды лицензирования в России
+                  +e.item 
+                    +e.link(href="page.html") Лицензия на алкоголь
+                  +e.item 
+                    +e.link(href="page.html") Лицензия МЧС
+                  +e.item
+                    +e.link(href="page.html") Лицензия на лом черных и цветных металлов              
+              +e.item
+                +e.link(href="page.html") Другие документы
+                +b.UL.dropdown-menu
+                  +e.item 
+                    +b.UL.submenu
+                      +e.item 
+                        +e.link(href="page.html") Нотификация ФСБ
+                      +e.item 
+                        +e.link(href="page.html") Озоновое заключение
+                      +e.item 
+                        +e.link(href="page.html") Свидетельство о государственной регистрации
+                      +e.item
+                        +e.link(href="page.html") Санитарно-эпидемиологиечское заключение
+                      +e.item 
+                        +e.link(href="page.html") Отказное письмо
+                      +e.item
+                        +e.link(href="page.html") Заключение Эксконта
+                  +e.item 
+                    +b.UL.submenu
+                      +e.item 
+                        +e.link(href="page.html") Импортное карантинное разрешение
+                      +e.item 
+                        +e.link(href="page.html") Экспертное заключение
+                      +e.item 
+                        +e.link(href="page.html") Разрешение Ростехнадзора
+                      +e.item
+                        +e.link(href="page.html") Экспертиза промышленной безопасности
+                      +e.item 
+                        +e.link(href="page.html") Обоснование безопасности технических устройств
+                      +e.item
+                        +e.link(href="page.html") Аттестация рабочих мест
+                  +e.item 
+                    +b.UL.submenu
+                      +e.item 
+                        +e.link(href="page.html") Специальная оценка условий труда
+                      +e.item 
+                        +e.link(href="page.html") Разработка технологической инструкции
+                      +e.item 
+                        +e.link(href="page.html") Разработка технических условий
+                      +e.item
+                        +e.link(href="page.html") Разработка рецептур
+                  +e.item
+                    +b.UL.submenu
+                      +e.item 
+                        +e.link(href="page.html") Проверка средств измерений
+                      +e.item 
+                        +e.link(href="page.html") Регистрация технических условий
+                      +e.item 
+                        +e.link(href="page.html") Свидетельство НАКС
+                      +e.item
+                        +e.link(href="page.html") Штрих-кодирование
+              +e.item
+                +e.link(href="page.html") Базы кодов
+                +b.UL.dropdown-menu
+                  +e.item 
+                    +b.UL.submenu
+                      +e.item 
+                        +e.link(href="page.html") Базы кодов ГОСТ
+                      +e.item 
+                        +e.link(href="page.html") Базы кодов ОКП
+                      +e.item 
+                        +e.link(href="page.html") Базы кодов ОКПд2
+                      +e.item
+                        +e.link(href="page.html") Реестр штрих-кодов 
+                      +e.item
+                        +e.link(href="page.html") Реестр добровольной сертификации "Система качества ЕАС"
+                      +e.item 
+                        +e.link(href="page.html") Проверка лаборатории по Техническому регламенту Таможенного Союза
+                      +e.item 
+                        +e.link(href="page.html") Проверка органа по Техническому регламенту Таможенного Союза
+                      +e.item 
+                        +e.link(href="page.html") Проверка деклараций по Таможенному союзу
+                      +e.item
+                        +e.link(href="page.html") Проверка сертификатов по Таможенному союзу                  
+                  +e.item 
+                    +b.UL.submenu
+                      +e.item 
+                        +e.link(href="page.html") Базы кодов ТНВЭД
+                      +e.item 
+                        +e.link(href="page.html") Базы кодов ОКУН
+                      +e.item 
+                        +e.link(href="page.html") Базы кодов ОКВЭД
+                      +e.item
+                        +e.link(href="page.html") Базы кодов МКТУ
+              +e.item
+                +e.link(href="page-contacts.html") Контакты
+
+

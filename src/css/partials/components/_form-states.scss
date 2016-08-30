@@ -1,0 +1,27 @@
+.has-success{
+  input, textarea{
+    border: 2px solid $success;
+    box-shadow: none;
+  }
+}
+.has-error{
+  input, textarea{
+    border: 2px solid $error;
+    box-shadow: none;
+  }
+  .help-block-error{
+    display: block;
+  }
+}
+.help-block{
+  display: none;
+  font-size: $font-size-small;
+}
+
+.form-group{
+  margin-bottom: 20px;  
+}
+
+.field-question-recaptcha .g-recaptcha > div { 
+  margin: 0 auto
+}
