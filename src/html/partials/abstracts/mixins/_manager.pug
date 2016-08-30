@@ -1,8 +1,0 @@
-mixin manager(name, img, icq, skype)
-  +b.manager
-    +e.img
-      img(src="img/managers/" + img alt= name title= name)
-    +e.info
-      +e.H3.name #{name}
-      +e.A.icq(href= "http://www.icq.com/whitepages/cmd.php?uin=" + icq + "&action=message") #{icq}
-      +e.A.skype(href= "skype:" + skype) #{skype}
