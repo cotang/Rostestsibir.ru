@@ -100,7 +100,10 @@
   display: flex;
   flex-wrap: wrap;
   margin: 20px 0 40px;
-
+  &__position{
+    margin: 0 0 10px;
+    font-style: italic;
+  }
 
   &__img{
     margin-right: 20px;
@@ -145,6 +148,28 @@
       display: inline-block;
       margin-right: 5px;
       @include sprite($s-contacts-skype); 
+    }
+  }
+  &__tel{
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    &:before{
+      content: "";
+      display: inline-block;
+      margin-right: 5px;
+      @include sprite($s-contacts-phone); 
+    }
+  }
+  &__mail{
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    &:before{
+      content: "";
+      display: inline-block;
+      margin-right: 5px;
+      @include sprite($s-contacts-mail); 
     }
   }
 }
