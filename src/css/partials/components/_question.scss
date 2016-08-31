@@ -1,0 +1,39 @@
+.question{  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  &__date{
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin: 10px 0 30px;
+    font-weight: $bold;
+    font-size: $font-size-title;
+    // @include mq($from:xs, $until:sm){
+    //   font-size: $font-size-promo;
+    // }     
+  }
+  &__subtitle{
+    font-weight: $bold;
+    font-size: $font-size-subtitle;
+  }
+  &__link{
+    display: inline-block;
+    font-size: $font-size-reduced;
+    margin-bottom: 40px;
+  } 
+  &__link-back{
+    display: inline-block;
+    font-size: $font-size-reduced;
+  }
+  &__answer{
+    border-left: 2px solid #9e9e9e;
+    background-color: $pale-grey;
+    padding: 10px;
+  } 
+  &__person{
+    font-weight: $semibold;
+  }
+  &__name{
+    font-weight: $bold;
+  }
+}

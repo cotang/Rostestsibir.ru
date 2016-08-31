@@ -47,25 +47,6 @@ img {
 }
 
 
-.bg-transparent{
-  background-image: $transparent-gradient;
-  background-repeat: repeat-y; 
-  background-position: 50% 0;
-}
-
-.flex-center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-between{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 h2, h3, h4, h5, h6{
   &:before{
     content: "";

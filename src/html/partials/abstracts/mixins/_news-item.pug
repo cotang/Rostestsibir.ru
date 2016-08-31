@@ -1,0 +1,9 @@
+mixin newsItem(title, img, alt, text)
+  +b.ARTICLE.news
+    +e.H2.subtitle
+      a(href="single-news.html") #{title}   
+    +e.text
+      +e.img
+        img(src= "img/" + img alt= alt title= alt)
+      | !{text}
+

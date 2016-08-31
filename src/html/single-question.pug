@@ -1,0 +1,44 @@
+extends partials/templates/template.pug
+//- include partials/abstracts/bemto/bemto.pug
+
+block content
+  +b.SECTION.page--single-question
+  
+    // Left sidebar
+    include partials/components/left-sidebar.pug  
+
+    // Content
+    +b.SECTION.content
+      +b.SECTION.breadcrumbs
+        a(href="index.html") Центр сертификации Ростест Сибирь
+        =' > '
+        a(href="page-form-question.html") Вопросы и ответы
+        =' > '
+        span Сертификация строительных материалов 
+
+      +b.ARTICLE.question
+        +e.H1.title Сертификация строительных материалов  
+        +e.date 30.08.2016
+        +e.ask
+          +e.person 
+            +e.name Людмила Безштанько  
+            | (Амурская область, 30 августа 2016)
+          +e.text
+            p Необходимо сертифицировать или декларировать строительные материалы (песок, щебень, мин. порошок и т.д). Процедура? Сроки? Стоимость?
+        +e.answer
+          +e.person Ксения, +7 (383) 310-20-45, info@rostestsibir.ru 
+          +e.text
+            p Добрый день, Людмила. 
+            p Уточните пожалуйста, область применения данных материалов (дорожное строительство или прочие цели).
+            p Вы являетесь производителем?
+            p Спасибо, жду Ваш ответ.
+      +e.A.link-back(href="page-form-question.html") Назад
+
+      +b.SECTION.navigation
+        +e.A.link(href="single-question.html") СБКТС для автомобиля Toyota LC Prado 2009 г.
+        +e.A.link(href="single-question.html") Сертификация мебели
+
+    // Right sidebar
+    include partials/components/right-sidebar.pug
+
+

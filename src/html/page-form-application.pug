@@ -1,0 +1,27 @@
+extends partials/templates/template.pug
+//- include partials/abstracts/bemto/bemto.pug
+
+block content
+  +b.SECTION.page--form-application
+
+    // Left sidebar
+    include partials/components/left-sidebar.pug 
+      
+    // Content
+    +b.SECTION.content
+      +b.SECTION.breadcrumbs
+        a(href="index.html") Центр сертификации Ростест Сибирь
+        =' > '
+        span Заказать документ
+        
+      +e.H1.title Заказать документ
+      p 
+        strong Система сертификации 
+        | РФ дает Вам право поручить любой этап, часть или полный цикл работ по оценке соответствия товаров и услуг аккредитованному сертификационному центру. Принцип «одного окна» значительно сокращает издержки и продолжительность процедуры, а наш опыт сотрудничества с государственными структурами наряду с высокой квалификацией персонала – гарантируют грамотное оформление документов в полном соответствии с законодательством.
+      p Просим Вас указывать при обращении реальный e-mail, поскольку именно на него Вы и получите наш ответ.
+      include partials/components/form--application.pug
+
+    // Right sidebar
+    include partials/components/right-sidebar.pug
+
+

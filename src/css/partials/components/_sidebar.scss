@@ -1,6 +1,23 @@
 .sidebar{
+  flex: 0 0 280px;
   text-align: left;
   font-size: $font-size-reduced;
+  @include mq($from:xs, $until:lg){
+    flex: 0 0 100%;
+
+  }
+
+  &--left{
+    @include mq($from:xs, $until:lg){
+      margin-top: 20px;
+      order: 1;
+    }
+  }
+  &--right{
+    @include mq($from:xs, $until:lg){
+      order: 2;
+    }
+  }  
 
   &__title{
     text-align: center;
@@ -9,18 +26,6 @@
     font-weight: $regular;
     font-size: $font-size-menu;
     background-color: $light-orange;   
-    &--left{
-      margin-left: -15px;
-      @include mq($from:xs, $until:md){
-        margin-right: -15px;
-      } 
-    } 
-    &--right{
-      margin-right: -15px;
-      @include mq($from:xs, $until:md){
-        margin-left: -15px;
-      } 
-    }
     &:before{
       content: none;
     }
@@ -28,47 +33,39 @@
   &__gratitude{
     text-align: center;
   }
-  &__gratitude-slide{
-    margin-top: 20px;
-  }
+
   &__link-all{
     display: inline-block;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin: 20px 15px 30px;
   }
 
+
   &__subscribe-text{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 15px;
   }
 
   &__shares-list{
     text-align: center;
   }
 
-
   &__form{
-    .form__close{
-      display: none;
-    }
-    .form__title{
-      display: none;
-    }
-    .recaptcha {
-        width: 40px;
-        height: 80px;
-        transform: scale(0.85);
-    }
-  }
-  .form--application{
-    padding-top: 10px;
-    margin-right: -15px;
     background-color: $pale-orange;
-    @include mq($from:xs, $until:md){
-      margin-left: -15px;
-    }    
+    .form{
+      padding-left: 15px;
+      padding-right: 15px;       
+    }   
+    .recaptcha {
+      width: 40px;
+      height: 80px;
+      transform: scale(0.85);
+    }
   }
+  &__form-text{
+    padding-left: 20px;
+    padding-right: 20px;       
+  } 
+
   &__btn{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -77,6 +74,8 @@
 }
 
 .news-item{
+  margin-left: 15px;
+  margin-right: 15px;
   &__date{
     margin-bottom: 10px;
   }
@@ -89,6 +88,8 @@
 
 .review-item{
   padding-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
   &__text{
     font-family: $font-family--serif;
     font-style: italic;
@@ -174,25 +175,3 @@
   }
 }
 
-.share-link{
-  display: inline-block;
-  opacity: 0.5;
-  &:hover, &:focus{
-    opacity: 1;
-  }
-  &:nth-child(1){
-    @include sprite($s-social-facebook);
-  }
-  &:nth-child(2){
-    @include sprite($s-social-vkontakte);
-  }
-  &:nth-child(3){
-    @include sprite($s-social-odnoklassniki);
-  }
-  &:nth-child(4){
-    @include sprite($s-social-mail);
-  }
-  &:nth-child(5){
-    @include sprite($s-social-google);
-  }
-}

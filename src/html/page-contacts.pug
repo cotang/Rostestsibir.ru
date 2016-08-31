@@ -1,0 +1,38 @@
+extends partials/templates/template.pug
+//- include partials/abstracts/bemto/bemto.pug
+
+block content
+  +b.SECTION.page--contacts
+
+    // Left sidebar
+    include partials/components/left-sidebar.pug
+
+    // Content
+    +b.SECTION.content
+      +b.SECTION.breadcrumbs
+        a(href="index.html") Центр сертификации Ростест Сибирь
+        =' > '
+        span Контакты 
+        
+      +e.H1.title Контакты
+      p(style="text-align: justify;") Аккредитованный во всех значимых системах 
+        strong центр сертификации «Ростест Сибирь»
+        | гарантирует актуальность и достоверность информации, предоставляемой нашими специалистами. Вы можете обращаться к нам по любому вопросу оценки соответствия, а также:
+      ul
+        li
+          a(title="Заказать документ", href="http://rostestsibir.ru/zakazat-sertifikat/") делегировать 
+          | нам весь цикл сертификационных работ;
+        li бесплатно получить профессиональную консультацию 
+          a(title="Вопрос-ответ", href="http://rostestsibir.ru/ask/") on-line 
+          | ; 
+        li заказать на нужное Вам время 
+          a(title="Заказать звонок" href="http://rostestsibir.ru/zakazat-zvonok/") звонок специалиста 
+          | ; 
+        li лично приехать в офис;
+        li позвонить по представленным ниже телефонам.
+      p(style="text-align: justify;") Офисы нашего центра сертификации расположены в десяти городах России. Выберите ближайший филиал или свяжитесь любым удобным способом с нашим головным офисом в Сибирском регионе - Новосибирске.
+      include partials/components/contacts.pug
+
+    // Right sidebar
+    include partials/components/right-sidebar.pug
+

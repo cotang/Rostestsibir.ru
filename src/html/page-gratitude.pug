@@ -1,0 +1,34 @@
+extends partials/templates/template.pug
+//- include partials/abstracts/bemto/bemto.pug
+include partials/abstracts/mixins/_slide.pug
+
+block content
+  +b.SECTION.page--gratitude
+
+    // Left sidebar
+    include partials/components/left-sidebar.pug  
+         
+    // Content
+    +b.SECTION.content
+      +b.SECTION.breadcrumbs
+        a(href="index.html") Центр сертификации Ростест Сибирь
+        =' > '
+        span Благодарственные письма
+        
+      +e.H1.title Благодарственные письма
+      p Центр сертификации 
+        a(href="#") «Ростест Сибирь» 
+        | давно и прочно занял свое место в ряду надежных компаний и может по праву гордиться тем, что все, кто обращался сюда за помощью в получении любого рода разрешительных документов, оставили только положительные отзывы и о качестве работы, и скорости, и ценах.
+      p Представляем вашему вниманию отзывы о центре сертификации «Ростест Сибирь» и официальные благодарственные письма от различных организаций, успешно сертифицировавших свою продукцию с помощью этого центра.
+      include partials/components/share.pug
+      
+      // Gallery
+      +b.gallery
+        - for (var i = 1; i < 10; ++i){
+          +slide("review01.jpg","Документ1")
+          +slide("review02.jpg","Документ1")
+        - } 
+
+    // Right sidebar
+    include partials/components/right-sidebar.pug
+

@@ -7,9 +7,9 @@ mixin form(items)
   each item in items
     +b.SECTION(class= 'form--' + item.name)
       form(action='', method='', id= 'form--' + item.name)
-        +e.A.close(href='#') Закрыть
-        +e.H3.title #{item.title}
-        +e.text !{item.text}
+        //- +e.A.close(href='#') Закрыть
+        //- +e.H3.title #{item.title}
+        //- +e.text !{item.text}
         if item.application
           .form-group.field-question-production.required
             +e.INPUT.input(type='text', name='Продукция', placeholder='Наименование продукции*') 

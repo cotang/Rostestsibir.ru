@@ -1,13 +1,14 @@
 include ../abstracts/bemto/bemto.pug
 
-// Left sidebar
 +b.ASIDE.sidebar--left
   //Random gratitude 
   +e.gratitude
     +e.H3.title--left Благодарственные письма
-    +e.gratitude-slide
-      +e.A.img(href="#")
-        img(src="http://rostestsibir.ru/wp-content/gallery/otzyvy/thumbs/thumbs_p6-1.jpg", alt="gratitude", title="gratitude")
+    +b.slide
+      +e.A.thumbnail(href='#')
+        img(src= "img/review01.jpg", alt="review", title="review")
+      +e.modal
+        img(src= "img/review01.jpg", alt="review", title="review")    
     +e.A.link-all(href="#") Смотреть все
   // News
   +e.news
@@ -46,12 +47,12 @@ include ../abstracts/bemto/bemto.pug
   +e.shares
     +e.H3.title--left Добавляйтесь
     +e.A.link-all(href="#") Пользуетесь Яндексом? Установите наш виджет!
-    +e.shares-list
-      +b.A.share-link(href="#")
-      +b.A.share-link(href="#")
-      +b.A.share-link(href="#")
-      +b.A.share-link(href="#")
-      +b.A.share-link(href="#")
+    +b.share
+      +e.A.link(href="#")
+      +e.A.link(href="#")
+      +e.A.link(href="#")
+      +e.A.link(href="#")
+      +e.A.link(href="#")
 
 
 

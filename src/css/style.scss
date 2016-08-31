@@ -2,7 +2,7 @@
 
 // 3rd party
 @import "partials/abstracts/variables";
-@import "partials/abstracts/bootstrap-flex";
+// @import "partials/abstracts/bootstrap-flex";
 @import "vendor/normalize";
 @import "vendor/mq";
 @import "vendor/slick";
@@ -19,16 +19,23 @@
 @import "partials/base/template";
 
 // Components
+@import "partials/components/page";
 @import "partials/components/header";
 @import "partials/components/nav";
 @import "partials/components/sidebar";
 @import "partials/components/footer";
+@import "partials/components/overlay";
+
 @import "partials/components/content";
-// @import "partials/components/page";
+@import "partials/components/office";
+@import "partials/components/question";
+@import "partials/components/news";
+@import "partials/components/gallery";
 
 
 @import "partials/components/btn";
 @import "partials/components/form";
 @import "partials/components/form-states";
-// @import "partials/components/pagination";
-// @import "partials/components/breadcrumbs";
+@import "partials/components/pagination";
+@import "partials/components/navigation";
+@import "partials/components/breadcrumbs";

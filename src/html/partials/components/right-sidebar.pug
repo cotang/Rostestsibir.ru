@@ -1,10 +1,11 @@
 include ../abstracts/bemto/bemto.pug
 
-// Right sidebar
 +b.ASIDE.sidebar--right
   //Form application
   +e.form
-    +e.H3.title--right Оставить заявку
+    +e.H3.title Оставить заявку
+    +e.form-text
+      p Отправьте нам заявку, и наши эксперты помогут решить вопросы с оформлением документа:
     include form--application.pug
   +e.sidebar__btn
     +b.A.btn--call(href="#") Задать вопрос

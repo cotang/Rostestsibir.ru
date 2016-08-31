@@ -1,13 +1,43 @@
 .content{
+  // flex: 0 1 calc(100% - 560px);
   text-align: left;
-  &__share{
-    text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  &__title{
+    margin: 10px 0 30px;
   }
-  &__share-inner{
+}
+
+.share{
+  text-align: center;
+
+  &__inner{
     display: inline-block;
     border: 1px solid $pale-orange;
     padding: 5px 15px;
     border-radius: 4px;
   }
 
+  &__link{
+    display: inline-block;
+    opacity: 0.5;
+    &:hover, &:focus{
+      opacity: 1;
+    }
+    &:nth-child(1){
+      @include sprite($s-social-facebook);
+    }
+    &:nth-child(2){
+      @include sprite($s-social-vkontakte);
+    }
+    &:nth-child(3){
+      @include sprite($s-social-odnoklassniki);
+    }
+    &:nth-child(4){
+      @include sprite($s-social-mail);
+    }
+    &:nth-child(5){
+      @include sprite($s-social-google);
+    }
+  }  
 }

@@ -1,0 +1,20 @@
+include ../abstracts/mixins/_office.pug
+include ../abstracts/bemto/bemto.pug
+
+
+- var novosibirsk = [{title : 'Новосибирск', languages: [['ru.png', 'русский язык'], ['en.png', 'английский язык'], ['fr.png', 'французский язык']], address: 'Станция метро: "Маршала Покрышкина", ул. Фрунзе, д. 88, 12 эт., оф. 1205', email: 'info@rostestsibir.ru', tel: '+7 (383) 310-20-45', tel: '+7 (383) 319-15-26', workFrom: '9:00', workTo: '19:00', mapSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5437.693387492903!2d82.93204040925369!3d55.03851227757926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dfe5c22053cc1b%3A0x8452a58c1d1b1978!2z0YPQuy4g0KTRgNGD0L3Qt9C1LCA4OCwg0J3QvtCy0L7RgdC40LHQuNGA0YHQuiwg0J3QvtCy0L7RgdC40LHQuNGA0YHQutCw0Y8g0L7QsdC7LiwgNjMwMDA1!5e0!3m2!1sru!2sru!4v1472221285663'}] 
+- var barnaul = [{title : 'Барнаул', languages: [['ru.png', 'русский язык'], ['en.png', 'английский язык'], ['fr.png', 'французский язык']], address: 'ул. Бехтерава, д.2', email: '22@rostestsibir.ru', tel: '+7 (3852) 25-28-47', workFrom: '9:00', workTo: '19:00', mapSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4762.02479474288!2d83.75154785351297!3d53.36093304416817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dda48c82cc2ac3%3A0xbdfc08db9e428f62!2z0YPQuy4g0JHQtdGF0YLQtdGA0LXQstCwLCAyLCDQkdCw0YDQvdCw0YPQuywg0JDQu9GC0LDQudGB0LrQuNC5INC60YDQsNC5LCA2NTYwMTE!5e0!3m2!1sru!2sru!4v1472629014628'}] 
+- var irkutsk = [{title : 'Иркутск', languages: [['ru.png', 'русский язык'], ['en.png', 'английский язык'], ['fr.png', 'французский язык']], address: 'ул. Байкальская, д.180а', email: '38@rostestsibir.ru', tel: '+7 (3952) 78-10-26', workFrom: '11:00', workTo: '21:00', mapSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5978.577403064632!2d104.31842689932195!3d52.259320171068794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5da83c827683fe9f%3A0x6f32ef1c11105304!2z0JHQsNC50LrQsNC70YzRgdC60LDRjyDRg9C7LiwgMTgwLCDQmNGA0LrRg9GC0YHQuiwg0JjRgNC60YPRgtGB0LrQsNGPINC-0LHQuy4sIDY2NDA4MQ!5e0!3m2!1sru!2sru!4v1472629230215'}] 
+- var krasnoyarsk = [{title : 'Красноярск', languages: [['ru.png', 'русский язык'], ['en.png', 'английский язык'], ['fr.png', 'французский язык']], address: 'ул. Весны, д.3а', email: '24@rostestsibir.ru', tel: '+7 (3912) 54-08-43', workFrom: '9:30', workTo: '18:00', mapSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5301.52570556386!2d92.90577903776563!3d56.03569482999279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7afa823e003e7%3A0x49956c5a8f7fa5ab!2z0YPQuy4g0JLQtdGB0L3RiywgM9CQLCDQmtGA0LDRgdC90L7Rj9GA0YHQuiwg0JrRgNCw0YHQvdC-0Y_RgNGB0LrQuNC5INC60YDQsNC5LCA2NjAxMzU!5e0!3m2!1sru!2sru!4v1472629576734'}] 
+- var omsk = [{title : 'Омск', languages: [['ru.png', 'русский язык'], ['en.png', 'английский язык'], ['fr.png', 'французский язык']], address: 'ул. Маршала Жукова, д.72 к.1', email: '55@rostestsibir.ru', tel: '+7 (3812) 35-66-57', workFrom: '9:00', workTo: '18:00', mapSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6476.522343555527!2d73.38395441781455!3d54.976668964828285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43aafe0846293b95%3A0xa933879c01179481!2z0YPQuy4g0JzQsNGA0YjQsNC70LAg0JbRg9C60L7QstCwLCA3Miwg0J7QvNGB0LosINCe0LzRgdC60LDRjyDQvtCx0LsuLCA2NDQwMTA!5e0!3m2!1sru!2sru!4v1472629712733'}] 
+- var astana = [{title : 'Астана', languages: [['ru.png', 'русский язык'], ['en.png', 'английский язык'], ['fr.png', 'французский язык'], ['kz.png', 'казахский язык']], address: 'ул. Достык, д.20', email: 'astana@rostestsibir.ru', tel: '+7 (717) 272-74-32', workFrom: '9:30', workTo: '18:00', mapSource: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4211.367256298034!2d71.43586112615321!3d51.1251750113514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245841c0ed92aed%3A0x9aa54ddfd0c9dc2f!2z0YPQuy4g0JTQvtGB0YLRi9C6IDIwLCDQkNGB0YLQsNC90LAgMDIwMDAwLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sru!4v1472630358701'}] 
+
+// Offices
++e.offices
+  +office(novosibirsk)
+  +office(barnaul)
+  +office(irkutsk)
+  +office(krasnoyarsk)
+  +office(omsk)
+  +office(astana)
+

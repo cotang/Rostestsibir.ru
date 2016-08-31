@@ -1,0 +1,11 @@
+mixin questionItem(title, askPerson, askDetails, askText)
+  +b.ARTICLE.question
+    +e.H2.subtitle
+      a(href="single-question.html") #{title}   
+    +e.ask
+      +e.person
+        +e.name #{askPerson} 
+        | #{askDetails} 
+      +e.text !{askText}
+    +e.A.link(href="single-question.html") Читать ответ
+

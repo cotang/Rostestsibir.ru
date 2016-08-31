@@ -5,49 +5,46 @@ jQuery(document).ready(function($){
   /* Hamburger */
   $('.hamburger').click(function(e){
     e.preventDefault();
-    // $(this).toggleClass('hamburger--close');
     $('.nav__wrapper').toggle();
   });               
 
-  /* header - контакты */
-  $('.header__gallery').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false,
-    centerMode: true,
-    centerPadding: '0',
-    autoplay: true,
-    autoplaySpeed: 4000
-  });
+  /* City list */
+  $('.city-choise__icon').click(function(e){
+    e.preventDefault();
+    $(this).addClass('city-choise__icon--open');
+    $('.city-choise__dropdown').toggle(); 
+  }); 
+  /* изменение названия, телефона и почты при выборе города */
+  $('.city-choise__item').on('click', function(){
+    $('.city-choise__name').html($(this).html());     
+    $('.city__name').html($(this).html()); 
+    $('.city__email-wrapper').html('<a class="city__email" target="_blank" href="mailto:'+$(this).data("email")+'">'+$(this).data("email")+'</a>');
 
-  /* галерея "с нами уже работают" */
-  $('.reviews__gallery').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '0',      
-    variableWidth: true
+    var tel = $(this).data("tel");
+    var hrefTel = tel.replace(/\D/g, "");
+    $('.city__tel-wrapper').html('<a class="city__tel" target="_blank" href="tel:+'+hrefTel+'">'+tel+'</a>');
+ 
+    $('.city-choise__dropdown').hide(); 
+    $('.city-choise__icon').removeClass('city-choise__icon--open');
+    return false;
   });
 
   /* Open the modal window */
-  $('.reviews__link').click( function(e){ 
+  $('.slide__thumbnail').click( function(e){ 
     e.preventDefault(); 
     $('body').css({"overflow":"hidden"});   
     $('.overlay').show();
-    $(this).closest('.reviews__slide').find('.reviews__modal').clone().appendTo($('.overlay'))
+    $(this).closest('.slide').find('.slide__modal').clone().appendTo($('.overlay'))
     .show()
     .animate({opacity: 1}, 200); 
   });
   /* Close the modal window */
   $('.overlay').click( function(){ 
     $('body').css({"overflow":"auto"});
-    $('.reviews__modal')
+    $(this).find('.slide__modal')
       .animate({opacity: 0}, 200,  
         function(){
-          $(this).hide();
+          $(this).remove();
           $('.overlay').fadeOut(400);
         }
       );

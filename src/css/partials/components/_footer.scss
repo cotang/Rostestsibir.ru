@@ -6,6 +6,16 @@
   // @include mq($from:xs, $until:sm){
   //   padding: 0;
   // } 
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin: 0 280px;
+    @include mq($from:xs, $until:xl){
+      margin: 0;
+    }    
+  }
   &__info{
     @include mq($from:xs, $until:xl){
       width: 100%;
@@ -29,6 +39,12 @@
   text-align: center;
   margin: 20px 0;
 
+  &__inner{
+    margin: 0 280px;
+    @include mq($from:xs, $until:xl){
+      margin: 0;
+    } 
+  }
   &__title{
     margin: 10px 0;
     text-transform: uppercase;

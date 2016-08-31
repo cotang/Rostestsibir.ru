@@ -1,0 +1,13 @@
+.breadcrumbs{
+  padding: 20px 0;
+  font-size: $font-size-breadcrumbs;
+  a{
+    margin-right: 10px;
+  }
+  a:not(:first-child){
+    margin-left: 10px;
+  }
+  span{
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,26 @@
+mixin office(items)
+  each item in items
+    +b.SECTION.office
+      +e.H2.title #{item.title}
+      +e.flags
+        each flag in item.languages
+          img(src= "img/" + flag[0] alt= flag[1] title= flag[1])
+      +e.details
+        if !item.tel2
+          p Если Вы планируете визит в наш офис, пожалуйста, предварительно свяжитесь с нашими специалистами по телефону: #{item.tel}
+        +e.P.address #{item.address}
+        +e.P.email E-mail: 
+          a(href= "mailto:" + item.email, target="_blank") #{item.email}
+        +e.P.tel Телефон:
+          a(href= "tel:" + item.tel, target="_blank") #{item.tel}
+        if item.tel2
+          +e.P.fax Телефон:
+            a(href= "tel:" + item.tel2, target="_blank") #{item.tel2}
+        +e.P.hours Мы работаем с 
+          span #{item.workFrom}
+          =' до '
+          span #{item.workTo}
+          =' по местному времени'
+      +e.map
+        iframe(src= item.mapSource frameborder="0" style="border:0" allowfullscreen)  
+

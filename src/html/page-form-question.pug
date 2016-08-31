@@ -1,0 +1,33 @@
+extends partials/templates/template.pug
+//- include partials/abstracts/bemto/bemto.pug
+
+block content
+  +b.SECTION.page--form-question
+
+    // Left sidebar
+    include partials/components/left-sidebar.pug 
+           
+    // Content
+    +b.SECTION.content
+      +b.SECTION.breadcrumbs
+        a(href="index.html") Центр сертификации Ростест Сибирь
+        =' > '
+        span Заказать вопрос эксперту 
+         
+      +e.H1.title Заказать вопрос эксперту 
+      p Заполните форму и отправьте свой вопрос эксперту.
+      p Просим Вас указывать при обращении реальный e-mail, поскольку именно на него Вы и получите наш ответ. 
+      p Наш сотрудник проконсультирует вас абсолютно бесплатно. Расскажет, 
+        strong как получить сертификат на продукцию 
+        | в предсказуемые сроки, без неоправданных задержек, издержек и в полном соответствии с актуальным на сегодняшний день законодательством.
+      p Так же связаться со специалистом вы сможете 
+        a(href="#") по телефону 
+        |.
+      include partials/components/form--question.pug
+      include partials/components/questions.pug
+
+    // Right sidebar
+    include partials/components/right-sidebar.pug
+
+
+

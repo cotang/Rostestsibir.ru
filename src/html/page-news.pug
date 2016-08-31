@@ -1,0 +1,22 @@
+extends partials/templates/template.pug
+//- include partials/abstracts/bemto/bemto.pug
+
+block content
+  +b.SECTION.page--news
+
+    // Left sidebar
+    include partials/components/left-sidebar.pug
+          
+    // Content
+    +b.SECTION.content
+      +b.SECTION.breadcrumbs
+        a(href="index.html") Центр сертификации Ростест Сибирь
+        =' > '
+        span Новости
+        
+      +e.H1.title Новости
+      include partials/components/news.pug
+
+    // Right sidebar
+    include partials/components/right-sidebar.pug
+
