@@ -96,7 +96,7 @@
           </div>
         </div>
         <div class="header__btn">
-          <a class="btn btn--question" href="#">Задать вопрос
+          <a class="btn btn--question" href="page-form-question.html">Задать вопрос
             <span class="btn__icon"></span>
           </a>
         </div>
@@ -397,9 +397,11 @@
       <section class="page page--form-call">
         <!-- Left sidebar-->
         <aside class="sidebar sidebar--left">
-          <!--Random gratitude -->
+          <!-- Gratitude random-->
           <div class="sidebar__gratitude">
-            <h3 class="sidebar__title sidebar__title--left">Благодарственные письма</h3>
+            <h3 class="sidebar__title sidebar__title--left">
+              <a href="page-gratitude.html">Благодарственные письма</a>
+            </h3>
             <div class="slide">
               <a class="slide__thumbnail" href="#">
                 <img src="img/review01.jpg" alt="review" title="review">
@@ -412,22 +414,24 @@
           </div>
           <!-- News-->
           <div class="sidebar__news">
-            <h3 class="sidebar__title sidebar__title--left">Новости</h3>
+            <h3 class="sidebar__title sidebar__title--left">
+              <a href="page-news.html">Новости</a>
+            </h3>
             <div class="news-item">
               <h3 class="news-item__title">
-                <a class="news-item__link" href="#">16 августа на сайте ЕЭК было опубликовано решение, изменяющее некоторые требования ТР ТС на автомобильный транспорт</a>
+                <a class="news-item__link" href="single-news.html">16 августа на сайте ЕЭК было опубликовано решение, изменяющее некоторые требования ТР ТС на автомобильный транспорт</a>
               </h3>
               <div class="news-item__date">19.08.2016</div>
               <div class="news-item__content">16 августа текущего года на сайте Евразийской экономической комиссии было опубликовано решение Совета Евразийской экономической комиссии № 56 «О внесении </div>
-              <a class="news-item__link-more" href="#">Читать далее...</a>
+              <a class="news-item__link-more" href="single-news.html">Читать далее...</a>
             </div>
             <div class="news-item">
               <h3 class="news-item__title">
-                <a class="news-item__link" href="#">С января 2018 года в силу вступает технический регламент, который будет действовать в отношении сжиженных углеводородных газов</a>
+                <a class="news-item__link" href="single-news.html">С января 2018 года в силу вступает технический регламент, который будет действовать в отношении сжиженных углеводородных газов</a>
               </h3>
               <div class="news-item__date">11.08.2016</div>
               <div class="news-item__content">С января 2018 года на территории всех стан ЕАЭС в силу вступает технический регламент, который будет действовать в отношении сжиженных </div>
-              <a class="news-item__link-more" href="#">Читать далее...</a>
+              <a class="news-item__link-more" href="single-news.html">Читать далее...</a>
             </div>
           </div>
           <!-- Subscribe-->
@@ -445,16 +449,18 @@
               </div>
             </form>
           </div>
-          <!--Review random-->
+          <!-- Review random-->
           <div class="sidebar__review">
-            <h3 class="sidebar__title sidebar__title--left">Отзывы</h3>
+            <h3 class="sidebar__title sidebar__title--left">
+              <a href="page-reviews.html">Отзывы</a>
+            </h3>
             <div class="review-item">
               <div class="review-item__text">- Огромное спасибо сотрудникам компании "Ростест" успехав вам и процветания. Отдельно хочу поблагодарить Терентьеву Марьяну за оформление СБКТС на авто из Киргизии.</div>
               <div class="review-item__person">РГ "АСК" г.Абакан</div>
             </div>
-            <a class="sidebar__link-all" href="#">Читать все отзывы</a>
+            <a class="sidebar__link-all" href="page-reviews.html">Читать все отзывы</a>
           </div>
-          <!--Shares-->
+          <!-- Social shares-->
           <div class="sidebar__shares">
             <h3 class="sidebar__title sidebar__title--left">Добавляйтесь</h3>
             <a class="sidebar__link-all" href="#">Пользуетесь Яндексом? Установите наш виджет!</a>
@@ -474,8 +480,10 @@
             <span>Заказать звонок </span>
           </section>
           <h1 class="content__title">Заказать звонок</h1>
-          <p>Даже в ситуациях (таможня, проверка и мн. др.), когда немедленно требуется дополнительная информация для решения возникших вопросов, Вы можете заказать нашим специалистам ответный звонок в нужное Вам время и полностью рассчитывать на своевременную
-            и актуальную информационно-правовую поддержку центра сертификации «Ростест Сибирь». </p>
+          <div class="content__text">
+            <p>Даже в ситуациях (таможня, проверка и мн. др.), когда немедленно требуется дополнительная информация для решения возникших вопросов, Вы можете заказать нашим специалистам ответный звонок в нужное Вам время и полностью рассчитывать на своевременную
+              и актуальную информационно-правовую поддержку центра сертификации «Ростест Сибирь». </p>
+          </div>
           <!-- Form call-->
           <section class="form form--call">
             <form action="" method="" id="form--call">
@@ -490,39 +498,6 @@
               <div class="form-group field-question-email required">
                 <input class="form__input" type="email" name="Email" placeholder="Ваш e-mail*" />
                 <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
-              </div>
-              <div class="form-group required">
-                <div class="form__region">
-                  <input class="form__input" type="text" name="Страна" placeholder="Страна*" />
-                  <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
-                  <ul class="form__region-list">
-                    <li class="bolder">Россия</li>
-                    <li class="bolder">Беларусь</li>
-                    <li class="bolder">Казахстан</li>
-                    <li>Украина</li>
-                    <li>Азербайджан</li>
-                    <li>Армения </li>
-                    <li>Грузия</li>
-                    <li>Молдавия</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="form-group required">
-                <div class="form__region">
-                  <input class="form__input" type="text" name="Регион" placeholder="Регион*" />
-                  <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
-                  <ul class="form__region-list">
-                    <li>Санкт-Петербург и Ленинградская область</li>
-                    <li>Москва и Московская область</li>
-                    <li>Новгородская область</li>
-                    <li>Псковская область</li>
-                    <li>Республика Карелия</li>
-                    <li>Мурманская область</li>
-                    <li>Калининградская область</li>
-                    <li>Вологодская область</li>
-                    <li>Тверская область</li>
-                  </ul>
-                </div>
               </div>
               <div class="form-group required">
                 <div class="form__time">
@@ -542,7 +517,7 @@
         </section>
         <!-- Right sidebar-->
         <aside class="sidebar sidebar--right">
-          <!--Form application-->
+          <!-- Form application-->
           <div class="sidebar__form">
             <h3 class="sidebar__title">Оставить заявку</h3>
             <div class="sidebar__form-text">
@@ -567,39 +542,6 @@
                   <input class="form__input" type="email" name="Email" placeholder="Ваш e-mail*" />
                   <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
                 </div>
-                <div class="form-group required">
-                  <div class="form__region">
-                    <input class="form__input" type="text" name="Страна" placeholder="Страна*" />
-                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
-                    <ul class="form__region-list">
-                      <li class="bolder">Россия</li>
-                      <li class="bolder">Беларусь</li>
-                      <li class="bolder">Казахстан</li>
-                      <li>Украина</li>
-                      <li>Азербайджан</li>
-                      <li>Армения </li>
-                      <li>Грузия</li>
-                      <li>Молдавия</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="form-group required">
-                  <div class="form__region">
-                    <input class="form__input" type="text" name="Регион" placeholder="Регион*" />
-                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
-                    <ul class="form__region-list">
-                      <li>Санкт-Петербург и Ленинградская область</li>
-                      <li>Москва и Московская область</li>
-                      <li>Новгородская область</li>
-                      <li>Псковская область</li>
-                      <li>Республика Карелия</li>
-                      <li>Мурманская область</li>
-                      <li>Калининградская область</li>
-                      <li>Вологодская область</li>
-                      <li>Тверская область</li>
-                    </ul>
-                  </div>
-                </div>
                 <div class="form-group recaptcha">
                   <div class="captcha"> </div>
                 </div>
@@ -609,14 +551,14 @@
             </section>
           </div>
           <div class="sidebar__btn">
-            <a class="btn btn--call" href="#">Задать вопрос
+            <a class="btn btn--call" href="page-form-call.html">Заказать звонок
               <span class="btn__icon"></span>
             </a>
           </div>
           <!-- Contacts-->
           <div class="sidebar__contacts">
             <h3 class="sidebar__title sidebar__title--right">Контакты</h3>
-            <p class="contacts-text">Для получения дополнительной информации обратитесь, пожалуйста, к вашему персональному менеджеру</p>
+            <p class="sidebar__contacts-text">Для получения дополнительной информации обратитесь, пожалуйста, к вашему персональному менеджеру</p>
             <div class="manager">
               <div class="manager__img">
                 <img src="img/managers/marina.jpg" alt="Марина" title="Марина">
@@ -627,7 +569,7 @@
                 <a class="manager__icq" href="http://www.icq.com/whitepages/cmd.php?uin=410781305&amp;amp;action=message" target="_blank">410-781-305</a>
                 <a class="manager__skype" href="skype:skypecall" target="_blank">skype: skypecall</a>
               </div>
-              <a class="manager__tel" href="tel:+74959576161" target="_blank"> + 7 495 957-61-61</a>
+              <a class="manager__tel" href="tel:+73833102045" target="_blank">+7 (383) 310-20-45</a>
               <a class="manager__mail" href="mailto:info@rostestsibir.ru" target="_blank">info@rostestsibir.ru</a>
             </div>
           </div>
