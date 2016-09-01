@@ -5,39 +5,9 @@
   margin-right: 25px;
   &__title{
     margin: 10px 0 30px;
+    font-size: $font-size-title;
+    @include mq($from:xs, $until:lg){
+      font-size: $font-size-subtitle;
+    }
   }
-}
-
-.share{
-  text-align: center;
-
-  &__inner{
-    display: inline-block;
-    border: 1px solid $pale-orange;
-    padding: 5px 15px;
-    border-radius: 4px;
-  }
-
-  &__link{
-    display: inline-block;
-    opacity: 0.5;
-    &:hover, &:focus{
-      opacity: 1;
-    }
-    &:nth-child(1){
-      @include sprite($s-social-facebook);
-    }
-    &:nth-child(2){
-      @include sprite($s-social-vkontakte);
-    }
-    &:nth-child(3){
-      @include sprite($s-social-odnoklassniki);
-    }
-    &:nth-child(4){
-      @include sprite($s-social-mail);
-    }
-    &:nth-child(5){
-      @include sprite($s-social-google);
-    }
-  }  
 }

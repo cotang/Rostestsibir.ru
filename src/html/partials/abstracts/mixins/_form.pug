@@ -23,33 +23,33 @@ mixin form(items)
         .form-group.field-question-email.required
           +e.INPUT.input(type='email', name='Email', placeholder='Ваш e-mail*')
           p.help-block.help-block-error Ошибка заполнения поля формы
-        .form-group.required
-          +e.region
-            +e.INPUT.input(type='text', name='Страна', placeholder='Страна*')
-            p.help-block.help-block-error Ошибка заполнения поля формы
-            +e.UL.region-list
-              li.bolder Россия
-              li.bolder Беларусь
-              li.bolder Казахстан
-              li Украина
-              li Азербайджан
-              li Армения    
-              li Грузия
-              li Молдавия
-        .form-group.required
-          +e.region
-            +e.INPUT.input(type='text', name='Регион', placeholder='Регион*')
-            p.help-block.help-block-error Ошибка заполнения поля формы
-            +e.UL.region-list
-              li Санкт-Петербург и Ленинградская область
-              li Москва и Московская область
-              li Новгородская область
-              li Псковская область
-              li Республика Карелия
-              li Мурманская область
-              li Калининградская область
-              li Вологодская область
-              li Тверская область
+        //- .form-group.required
+        //-   +e.region
+        //-     +e.INPUT.input(type='text', name='Страна', placeholder='Страна*')
+        //-     p.help-block.help-block-error Ошибка заполнения поля формы
+        //-     +e.UL.region-list
+        //-       li.bolder Россия
+        //-       li.bolder Беларусь
+        //-       li.bolder Казахстан
+        //-       li Украина
+        //-       li Азербайджан
+        //-       li Армения    
+        //-       li Грузия
+        //-       li Молдавия
+        //- .form-group.required
+        //-   +e.region
+        //-     +e.INPUT.input(type='text', name='Регион', placeholder='Регион*')
+        //-     p.help-block.help-block-error Ошибка заполнения поля формы
+        //-     +e.UL.region-list
+        //-       li Санкт-Петербург и Ленинградская область
+        //-       li Москва и Московская область
+        //-       li Новгородская область
+        //-       li Псковская область
+        //-       li Республика Карелия
+        //-       li Мурманская область
+        //-       li Калининградская область
+        //-       li Вологодская область
+        //-       li Тверская область
         if item.question
           .form-group.required
             +e.TEXTAREA.textarea(type='text', name='Ваш вопрос', placeholder='Ваш вопрос*')

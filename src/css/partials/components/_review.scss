@@ -1,0 +1,18 @@
+// .reviews{
+//   &__form{
+//     width: 100%;
+//     max-width: 500px;
+//     margin: 30px auto;
+//   }
+//   &__articles{
+//     margin-top: 50px;
+//   }
+// }
+
+.review{
+  margin: 30px 0;
+  &__title{
+    font-weight: $regular;
+    color: $dark-orange;
+  }
+}

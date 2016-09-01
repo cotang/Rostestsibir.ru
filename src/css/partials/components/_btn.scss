@@ -48,7 +48,11 @@
       @include sprite($s-call);   
     }
   }
-
+  &--application{
+    .btn__icon:after{
+      @include sprite($s-doc);   
+    }
+  }
   &--form{
     margin-bottom: 40px;    
     background-color: $light-orange;

@@ -1,0 +1,54 @@
+extends partials/templates/template.pug
+//- include partials/abstracts/bemto/bemto.pug
+
+block content
+  +b.SECTION.page--reviews
+
+    // Left sidebar
+    include partials/components/left-sidebar.pug  
+         
+    // Content
+    +b.SECTION.content
+      +b.SECTION.breadcrumbs
+        a(href="index.html") Центр сертификации Ростест Сибирь
+        =' > '
+        span Отзывы
+        
+      +e.H1.title Отзывы
+      +e.text
+        p 
+          strong Центр сертификации «Ростест Сибирь» 
+          | будет благодарен Вам за все оставленные на этой странице замечания, предложения, пожелания и другие отзывы, помогающие нам контролировать уровень предоставленных сертификационных услуг.
+
+      +e.form
+        include partials/components/form--review.pug 
+
+      +e.reviews
+        +b.ARTICLE.review
+          +e.H2.title Помощь в онлайн-консультации
+          +e.P.person Компания: 
+            span "Алина"                
+          +e.P.text Комментарий: 
+            span Обращалась с вопросами по поводу сертификации/декларации к сотруднице Байгуловой Марине, вопросов было много. Спасибо Марине за ответы, все пояснила, не оставила вопросы без внимания, стало многое понятно! 
+        +b.ARTICLE.review
+          +e.H2.title Спасибо
+          +e.P.person Компания: 
+            span ООО "ТАСО"                
+          +e.P.text Комментарий: 
+            span Спасибо вам за работу! Тереньтьева Марьяна отличный сотрудник! Оператовно решает все вопросы и очень граммотно даёт консультации. Все вопросы о сертификации решаем только в этой компании. Спасибо за благотворное сотрудничество! 
+        +b.ARTICLE.review
+          +e.H2.title Консультация по сертификации бытовой техники
+          +e.P.person Компания: 
+            span ООО "СДТ"                
+          +e.P.text Комментарий: 
+            span Хочу выразить благодарность Терентьевой Марьяне за оперативный, грамотный ответ.  
+        
+      // Bottom buttons
+      include partials/components/bottom-buttons.pug 
+      // Recommendations
+      include partials/components/recommendations.pug
+
+    // Right sidebar
+    include partials/components/right-sidebar.pug
+
+

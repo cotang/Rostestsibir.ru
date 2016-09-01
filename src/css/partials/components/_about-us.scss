@@ -1,0 +1,44 @@
+.about-us{
+  margin: 40px 0;
+  position: relative;
+
+  &__item{
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;      
+  }
+  &__input{
+    display: none;
+    &:checked{
+      ~ .about-us__label .about-us__title:after{
+        transform: rotate(90deg);
+      }           
+      ~ .about-us__text{
+        display: block;
+      }
+    }
+  }
+  &__label{
+    cursor: pointer;       
+  }
+  &__title{
+    font-weight: $regular;
+    margin: 0;
+    margin-left: 40px;
+
+    &:before{
+      content: none;
+    } 
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include sprite($s-dot);      
+    }
+  }
+  &__text{
+    display: none;
+    margin-top: 20px;      
+  }
+}

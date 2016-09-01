@@ -1,9 +1,10 @@
 include ../abstracts/bemto/bemto.pug
 
 +b.ASIDE.sidebar--left
-  //Random gratitude 
+  // Gratitude random
   +e.gratitude
-    +e.H3.title--left Благодарственные письма
+    +e.H3.title--left 
+      a(href="page-gratitude.html") Благодарственные письма
     +b.slide
       +e.A.thumbnail(href='#')
         img(src= "img/review01.jpg", alt="review", title="review")
@@ -12,19 +13,20 @@ include ../abstracts/bemto/bemto.pug
     +e.A.link-all(href="#") Смотреть все
   // News
   +e.news
-    +e.H3.title--left Новости
+    +e.H3.title--left 
+      a(href="page-news.html") Новости
     +b.news-item
       +e.H3.title 
-        +e.A.link(href="#") 16 августа на сайте ЕЭК было опубликовано решение, изменяющее некоторые требования ТР ТС на автомобильный транспорт
+        +e.A.link(href="single-news.html") 16 августа на сайте ЕЭК было опубликовано решение, изменяющее некоторые требования ТР ТС на автомобильный транспорт
       +e.date 19.08.2016
       +e.content 16 августа текущего года на сайте Евразийской экономической комиссии было опубликовано решение Совета Евразийской экономической комиссии № 56 «О внесении     
-      +e.A.link-more(href="#") Читать далее...
+      +e.A.link-more(href="single-news.html") Читать далее...
     +b.news-item
       +e.H3.title 
-        +e.A.link(href="#") С января 2018 года в силу вступает технический регламент, который будет действовать в отношении сжиженных углеводородных газов
+        +e.A.link(href="single-news.html") С января 2018 года в силу вступает технический регламент, который будет действовать в отношении сжиженных углеводородных газов
       +e.date 11.08.2016
       +e.content С января 2018 года на территории всех стан ЕАЭС в силу вступает технический регламент, который будет действовать в отношении сжиженных     
-      +e.A.link-more(href="#") Читать далее...
+      +e.A.link-more(href="single-news.html") Читать далее...
   // Subscribe
   +e.subscribe
     +e.H3.title--left Подписывайтесь
@@ -36,14 +38,15 @@ include ../abstracts/bemto/bemto.pug
       +e.button-wrapper
         +b.BUTTON.btn--subscribe(type="submit") Подписаться
         +b.BUTTON.btn--unsubscribe(type="submit") Отписаться
-  //Review random
+  // Review random
   +e.review
-    +e.H3.title--left Отзывы
+    +e.H3.title--left 
+      a(href="page-reviews.html") Отзывы
     +b.review-item
       +e.text - Огромное спасибо сотрудникам компании "Ростест" успехав вам и процветания. Отдельно хочу поблагодарить Терентьеву Марьяну за оформление СБКТС на авто из Киргизии.
       +e.person РГ "АСК" г.Абакан
-    +e.A.link-all(href="#") Читать все отзывы
-  //Shares
+    +e.A.link-all(href="page-reviews.html") Читать все отзывы
+  // Social shares
   +e.shares
     +e.H3.title--left Добавляйтесь
     +e.A.link-all(href="#") Пользуетесь Яндексом? Установите наш виджет!

@@ -7,14 +7,14 @@
   &__link{
     width: 35%;
     &:first-of-type{
-      text-align: right;
+      text-align: left;
       &:before{
         content: "←";  
         margin-right: 5px;    
       }
     }
     &:last-of-type{
-      text-align: left;
+      text-align: right;
       &:after{
         content: "→";
         margin-left: 5px;      

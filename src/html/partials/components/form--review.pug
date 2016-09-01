@@ -1,0 +1,20 @@
+include ../abstracts/bemto/bemto.pug
+
+// Form review
++b.SECTION(class= 'form--review')
+  form(action='', method='', id= 'formReview')
+    //- +e.A.close(href='#') Закрыть
+    +e.H3.title Оставить отзыв
+    .form-group.field-review-name.required.has-error
+      +e.INPUT.input(type='text', name='Компания', placeholder='Ваша компания*')
+      p.help-block.help-block-error Ошибка заполнения поля формы
+    .form-group.field-review-email.required.has-success
+      +e.INPUT.input(type='email', name='Email', placeholder='Ваш e-mail*')
+      p.help-block.help-block-error Ошибка заполнения поля формы
+    .form-group.field-review-text.required
+      +e.TEXTAREA.textarea(type='text', name='Ваш отзыв', placeholder='Ваш отзыв*')
+      p.help-block.help-block-error Ошибка заполнения поля формы
+    .form-group.recaptcha
+      +b.captcha
+    +b.BUTTON.btn--form(type='submit') Оставить отзыв
+    p.help-block.help-block-success Отзыв успешно оставлен

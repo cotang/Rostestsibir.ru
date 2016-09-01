@@ -12,10 +12,12 @@ block content
       +b.SECTION.breadcrumbs
         a(href="index.html") Центр сертификации Ростест Сибирь
         =' > '
-        span Новости
-        
+        span Новости        
       +e.H1.title Новости
       include partials/components/news.pug
+      
+      // Bottom buttons
+      include partials/components/bottom-buttons.pug 
 
     // Right sidebar
     include partials/components/right-sidebar.pug

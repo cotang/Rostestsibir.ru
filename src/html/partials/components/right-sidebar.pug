@@ -1,19 +1,19 @@
 include ../abstracts/bemto/bemto.pug
 
 +b.ASIDE.sidebar--right
-  //Form application
+  // Form application
   +e.form
     +e.H3.title Оставить заявку
     +e.form-text
       p Отправьте нам заявку, и наши эксперты помогут решить вопросы с оформлением документа:
     include form--application.pug
   +e.sidebar__btn
-    +b.A.btn--call(href="#") Задать вопрос
+    +b.A.btn--call(href="page-form-call.html") Заказать звонок
       +e.icon
   // Contacts
   +e.sidebar__contacts
     +e.H3.sidebar__title--right Контакты
-    +e.P.contacts-text Для получения дополнительной информации обратитесь, пожалуйста, к вашему персональному менеджеру
+    +e.P.sidebar__contacts-text Для получения дополнительной информации обратитесь, пожалуйста, к вашему персональному менеджеру
     +b.manager
       +e.img
         img(src="img/managers/marina.jpg" alt="Марина" title="Марина")
@@ -22,5 +22,5 @@ include ../abstracts/bemto/bemto.pug
         +e.P.position Старший менеджер
         +e.A.icq(href= "http://www.icq.com/whitepages/cmd.php?uin=410781305&action=message", target="_blank") 410-781-305
         +e.A.skype(href= "skype:skypecall", target="_blank") skype: skypecall
-      +e.A.tel(href= "tel:+74959576161", target="_blank")  + 7 495 957-61-61
+      +e.A.tel(href= "tel:+73833102045", target="_blank") +7 (383) 310-20-45
       +e.A.mail(href="mailto:info@rostestsibir.ru", target="_blank") info@rostestsibir.ru
