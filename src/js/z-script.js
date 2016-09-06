@@ -11,9 +11,10 @@ jQuery(document).ready(function($){
   /* City list */
   $('.city-choise__icon').click(function(e){
     e.preventDefault();
-    $(this).addClass('city-choise__icon--open');
+    $(this).toggleClass('city-choise__icon--open');
     $('.city-choise__dropdown').toggle(); 
   }); 
+
   /* изменение названия, телефона и почты при выборе города */
   $('.city-choise__item').on('click', function(){
     $('.city-choise__name').html($(this).html());     

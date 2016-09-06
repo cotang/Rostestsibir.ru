@@ -148,33 +148,42 @@
     }    
   }
   &__name{
-    margin: 0 0 5px;
+    margin: -10px 0 5px;
+    font-size: $font-size-reduced;
+    font-weight: $regular;
     &:before{
       content: none;
     }
   }
   &__position{
-    margin: 0 0 10px;
+    margin: 0 0 5px;
+    font-family: $font-family--serif;
     font-style: italic;
   }
   &__icq{
     display: block;
-    margin-bottom: 5px;
+
+    font-size: $font-size-small;
     &:before{
       content: "";
       display: inline-block;
+      vertical-align: bottom;
       margin-right: 5px;
-      @include sprite($s-contacts-icq); 
+      @include sprite($s-contacts-icq);
+      transform: scale(0.9); 
     }
   }
   &__skype{
     display: block;
-    margin-bottom: 5px;
+
+    font-size: $font-size-small;
     &:before{
       content: "";
       display: inline-block;
+      vertical-align: bottom;
       margin-right: 5px;
       @include sprite($s-contacts-skype); 
+      transform: scale(0.9);
     }
   }
   &__tel{

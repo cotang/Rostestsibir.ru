@@ -68,14 +68,30 @@
   left: 0;
   transform: translateY(100%);
   font-size: $font-size-submenu;
-  justify-content: space-between;  
+  justify-content: space-between;
+  justify-content: flex-start;   
+  flex-wrap: wrap; 
   @include mq($from:xs, $until:md){
-    flex-wrap: wrap;
+    margin: 0 20px;
+    width: calc(100% - 40px);
   }
 
   &__item{
-    min-width: 20%;
+    width: 20%;
     padding: 10px 0;
+    position: relative;
+    &:before{
+      position: absolute;
+      top: 1.2em;
+      left: .4em;
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 0.35em;
+      height: 0.35em;
+      border-radius: 50%;
+      background-image: linear-gradient(0deg, rgb(227,127,54) 0%, rgb(247,177,85) 86%, rgb(243,166,78) 93%, rgb(238,154,71) 100%);
+    }
     @include mq($from:xs, $until:md){
       width: 100%;
     }
@@ -83,37 +99,37 @@
   &__link{
     color: $text-color;    
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 10px 0 20px;
     &:hover, &:focus, &:active{
       color: $dark-orange;
     }
   }  
 }
 
-.submenu{
-  padding-left: 30px;
-  padding-right: 10px;
-  &__item{
-    margin: 10px 0;
-    display: block;
-    &:before{
-      content: "";
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 0.4em;
-      width: 0.35em;
-      height: 0.35em;
-      border-radius: 50%;
-      background-image: linear-gradient(0deg, rgb(227,127,54) 0%, rgb(247,177,85) 86%, rgb(243,166,78) 93%, rgb(238,154,71) 100%);
-    }
-  }
-  &__link{
-    color: $text-color;    
-    &:hover, &:focus, &:active{
-      color: $dark-orange;
-    }
-  }   
-}
+// .submenu{
+//   padding-left: 30px;
+//   padding-right: 10px;
+//   &__item{
+//     margin: 10px 0;
+//     display: block;
+//     &:before{
+//       content: "";
+//       display: inline-block;
+//       vertical-align: middle;
+//       margin-right: 0.4em;
+//       width: 0.35em;
+//       height: 0.35em;
+//       border-radius: 50%;
+//       background-image: linear-gradient(0deg, rgb(227,127,54) 0%, rgb(247,177,85) 86%, rgb(243,166,78) 93%, rgb(238,154,71) 100%);
+//     }
+//   }
+//   &__link{
+//     color: $text-color;    
+//     &:hover, &:focus, &:active{
+//       color: $dark-orange;
+//     }
+//   }   
+// }
 
 .hamburger{
   display: block;

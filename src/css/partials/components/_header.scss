@@ -86,7 +86,7 @@
     font-style: italic;
     padding: 8px 10px;
     border: 1px solid $light-orange;
-    border-radius: 5px;
+    // border-radius: 5px;
     &::-webkit-input-placeholder{
       color: $text-color;         
     }       
@@ -145,7 +145,7 @@
     font-size: $font-size-small;
     background-color: $body-bg;
     border: 1px solid $light-orange;
-    border-radius: 5px;
+    // border-radius: 5px;
     padding: 7px 10px;
     min-width: 200px;
   }
@@ -175,7 +175,7 @@
     transform: translateY(100%);    
     list-style-type: none;
     border: 1px solid $light-orange;
-    border-top: 1px solid $body-bg;
+    // border-top: 1px solid $body-bg;
     background-color: $body-bg;
   }
   &__item{

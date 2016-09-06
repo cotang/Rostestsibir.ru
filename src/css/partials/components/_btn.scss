@@ -1,9 +1,10 @@
 .btn{
   display: inline-block;
   border: 2ps solid $bg-white;
-  border-radius: 4px;
+  // border-radius: 4px;
   padding: 5px;
   background-color: $btn-bg;
+  font-size: $font-size-btn;
   color: $text-color-white;
   text-transform: uppercase;
   font-weight: 700;   
@@ -22,7 +23,7 @@
     top: -2px;
     background-color: $light-orange;
     border: 2px solid $bg-white;
-    border-radius: 4px;
+    // border-radius: 4px;
     box-sizing: content-box;
     display: inline-block;
     height: 100%;
@@ -54,7 +55,7 @@
     }
   }
   &--form{
-    margin-bottom: 40px;    
+    margin-bottom: 30px;    
     background-color: $light-orange;
     border: none;
     padding: 10px 20px; 
@@ -68,7 +69,9 @@
     padding: 5px 10px;
     border: 1px solid $light-orange;
     font-weight: $regular;
-    margin-bottom: 20px;
+    margin: 0 5px 20px;
+    text-transform: capitalize;
+    color: $text-color;
     &:hover, &:focus{
       background-color: $white;
       color: $light-orange;
