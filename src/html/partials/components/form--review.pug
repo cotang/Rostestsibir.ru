@@ -4,7 +4,7 @@ include ../abstracts/bemto/bemto.pug
 +b.SECTION(class= 'form--review')
   form(action='', method='', id= 'formReview')
     //- +e.A.close(href='#') Закрыть
-    +e.H3.title Оставить отзыв
+    //- +e.H3.title Оставить отзыв
     .form-group.field-review-name.required.has-error
       +e.INPUT.input(type='text', name='Компания', placeholder='Ваша компания*')
       p.help-block.help-block-error Ошибка заполнения поля формы

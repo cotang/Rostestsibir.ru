@@ -9,13 +9,14 @@
 
   &--left{
     @include mq($from:xs, $until:lg){
-      margin-top: 20px;
-      order: 1;
+      
+      order: 2;
     }
   }
   &--right{
     @include mq($from:xs, $until:lg){
-      order: 2;
+      margin-top: 20px;
+      order: 1;
     }
   }  
 
@@ -78,7 +79,8 @@
     text-align: center;
   }
   &__contacts-text{
-
+    margin-left: 15px;
+    margin-right: 15px;
     @include mq($from:md, $until:lg){
       text-align: center;
       max-width: 400px;
@@ -119,7 +121,7 @@
 .manager{
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0 40px;
+  margin: 20px 15px;
   @include mq($from:md, $until:xl){
     justify-content: center;
     text-align: center;
@@ -148,7 +150,7 @@
     }    
   }
   &__name{
-    margin: -10px 0 5px;
+    margin: -5px 0 5px;
     font-size: $font-size-reduced;
     font-weight: $regular;
     &:before{
@@ -162,7 +164,7 @@
   }
   &__icq{
     display: block;
-
+    margin: 0 0 5px;
     font-size: $font-size-small;
     &:before{
       content: "";
@@ -175,7 +177,7 @@
   }
   &__skype{
     display: block;
-
+    margin: 0 0 5px;
     font-size: $font-size-small;
     &:before{
       content: "";
@@ -190,6 +192,7 @@
     width: 100%;
     display: block;
     margin-bottom: 5px;
+    font-size: $font-size-small;
     &:before{
       content: "";
       display: inline-block;
@@ -201,6 +204,7 @@
     width: 100%;
     display: block;
     margin-bottom: 5px;
+    font-size: $font-size-small;
     &:before{
       content: "";
       display: inline-block;

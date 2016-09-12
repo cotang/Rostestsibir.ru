@@ -66,14 +66,6 @@ jQuery(document).ready(function($){
       $(this).closest(regionList).mouseleave();
     }); 
 
-  /* открывание ответа по ссылке "читать далее" */
-  // $('.question__details').click(function(e) {
-  //     e.preventDefault();
-  //     $(this).closest('.question').find('.question__answer').toggle();      
-  // });
-
-
-
   /* кнопка "наверх" */
   $('.up').click(function(e) {
       e.preventDefault();
@@ -81,6 +73,10 @@ jQuery(document).ready(function($){
       return false;
   });
 
+  /* перегруппировка блоков для мобильника */
+  if ($(window).width() <= 768) {
+    $('.recommendations').appendTo($('.sidebar--right'));
+  }
 
 });
 

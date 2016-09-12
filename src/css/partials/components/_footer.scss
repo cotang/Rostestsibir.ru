@@ -13,7 +13,7 @@
     flex-wrap: wrap; 
     margin: 0 280px;
     @include mq($from:xs, $until:xl){
-      margin: 0;
+      margin: 0 20px;
     }    
   }
   &__info{
@@ -73,6 +73,7 @@
     height: 40px;
     line-height: 40px;
     background-color: wheat;
+    margin-bottom: 10px;
   }
 }
 .up{  
