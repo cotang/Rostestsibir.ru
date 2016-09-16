@@ -39,12 +39,13 @@
     <link type="text/plain" rel="author" href="humans.txt">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   </head>
   <body>
     <!-- Header-->
     <header class="header">
-      <div class="header__pre">
+      <div class="header__inner">
         <div class="header__block">
           <!-- City choise-->
           <div class="city-choise">
@@ -71,8 +72,8 @@
           </div>
           <!-- Languages-->
           <div class="languages">
-            <a class="languages__link languages__link--active" href="#">RU </a> /
-            <a class="languages__link" href="#">EN </a>
+            <span>RU </span> /
+            <a href="#">EN </a>
           </div>
         </div>
       </div>
@@ -354,46 +355,46 @@
         <!-- Left sidebar-->
         <aside class="sidebar sidebar--left">
           <!-- Gratitude random-->
-          <div class="sidebar__gratitude">
-            <h3 class="sidebar__title sidebar__title--left">
+          <section class="gratitude-section">
+            <h3 class="gratitude-section__title">
               <a href="page-gratitude.html">Благодарственные письма</a>
             </h3>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
                 <img src="img/review01.jpg" alt="review" title="review">
               </a>
-              <div class="slide__modal">
+              <div class="gratitude-pic__modal">
                 <img src="img/review01.jpg" alt="review" title="review">
               </div>
             </div>
-            <a class="sidebar__link-all" href="#">Смотреть все</a>
-          </div>
-          <!-- News-->
-          <div class="sidebar__news">
-            <h3 class="sidebar__title sidebar__title--left">
+            <a class="link-all" href="#">Смотреть все</a>
+          </section>
+          <!-- News section-->
+          <section class="news-section">
+            <h3 class="news-section__title">
               <a href="page-news.html">Новости</a>
             </h3>
-            <div class="news-item">
+            <article class="news-item">
               <h3 class="news-item__title">
                 <a class="news-item__link" href="single-news.html">16 августа на сайте ЕЭК было опубликовано решение, изменяющее некоторые требования ТР ТС на автомобильный транспорт</a>
               </h3>
               <div class="news-item__date">19.08.2016</div>
               <div class="news-item__content">16 августа текущего года на сайте Евразийской экономической комиссии было опубликовано решение Совета Евразийской экономической комиссии № 56 «О внесении </div>
               <a class="news-item__link-more" href="single-news.html">Читать далее...</a>
-            </div>
-            <div class="news-item">
+            </article>
+            <article class="news-item">
               <h3 class="news-item__title">
                 <a class="news-item__link" href="single-news.html">С января 2018 года в силу вступает технический регламент, который будет действовать в отношении сжиженных углеводородных газов</a>
               </h3>
               <div class="news-item__date">11.08.2016</div>
               <div class="news-item__content">С января 2018 года на территории всех стан ЕАЭС в силу вступает технический регламент, который будет действовать в отношении сжиженных </div>
               <a class="news-item__link-more" href="single-news.html">Читать далее...</a>
-            </div>
-          </div>
-          <!-- Subscribe-->
-          <div class="sidebar__subscribe">
-            <h3 class="sidebar__title sidebar__title--left">Подписывайтесь</h3>
-            <p class="sidebar__subscribe-text">Будьте в курсе последних новостей в мире сертификации продукции и услуг.</p>
+            </article>
+          </section>
+          <!-- Subscribe section-->
+          <section class="subscribe-section">
+            <h3 class="subscribe-section__title">Подписывайтесь</h3>
+            <p class="subscribe-section__text">Будьте в курсе последних новостей в мире сертификации продукции и услуг.</p>
             <form class="form form--subscribe" action="" method="" id="subscribe">
               <div class="form-group field-question-email required">
                 <input class="form__input" type="email" name="Email" placeholder="Введите ваш e-mail*" />
@@ -404,22 +405,22 @@
                 <button class="btn btn--unsubscribe" type="submit">Отписаться</button>
               </div>
             </form>
-          </div>
+          </section>
           <!-- Review random-->
-          <div class="sidebar__review">
-            <h3 class="sidebar__title sidebar__title--left">
+          <section class="review-section">
+            <h3 class="review-section__title">
               <a href="page-reviews.html">Отзывы</a>
             </h3>
-            <div class="review-item">
+            <article class="review-item">
               <div class="review-item__text">- Огромное спасибо сотрудникам компании "Ростест" успехав вам и процветания. Отдельно хочу поблагодарить Терентьеву Марьяну за оформление СБКТС на авто из Киргизии.</div>
               <div class="review-item__person">РГ "АСК" г.Абакан</div>
-            </div>
-            <a class="sidebar__link-all" href="page-reviews.html">Читать все отзывы</a>
-          </div>
+            </article>
+            <a class="link-all" href="page-reviews.html">Читать все отзывы</a>
+          </section>
           <!-- Social shares-->
-          <div class="sidebar__shares">
-            <h3 class="sidebar__title sidebar__title--left">Добавляйтесь</h3>
-            <a class="sidebar__link-all" href="#">Пользуетесь Яндексом? Установите наш виджет!</a>
+          <section class="shares-section">
+            <h3 class="shares-section__title">Добавляйтесь</h3>
+            <a class="link-all" href="#">Пользуетесь Яндексом? Установите наш виджет!</a>
             <div class="share">
               <a class="share__link" href="#"></a>
               <a class="share__link" href="#"></a>
@@ -427,7 +428,7 @@
               <a class="share__link" href="#"></a>
               <a class="share__link" href="#"></a>
             </div>
-          </div>
+          </section>
         </aside>
         <!-- Content-->
         <section class="content">
@@ -451,149 +452,149 @@
               <a class="share__link" href="#"></a>
             </div>
           </section>
-          <!-- Gallery-->
-          <div class="gallery">
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
+          <!-- Gratitude gallery-->
+          <div class="gratitude-gallery">
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
                 <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
               </a>
-              <div class="slide__modal">
-                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
-              </div>
-            </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
-                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
-              </a>
-              <div class="slide__modal">
-                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
-              </div>
-            </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
-                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
-              </a>
-              <div class="slide__modal">
+              <div class="gratitude-pic__modal">
                 <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
               </div>
             </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
                 <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
               </a>
-              <div class="slide__modal">
-                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
-              </div>
-            </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
-                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
-              </a>
-              <div class="slide__modal">
-                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
-              </div>
-            </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
-                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
-              </a>
-              <div class="slide__modal">
+              <div class="gratitude-pic__modal">
                 <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
               </div>
             </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
                 <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
               </a>
-              <div class="slide__modal">
-                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
-              </div>
-            </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
-                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
-              </a>
-              <div class="slide__modal">
-                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
-              </div>
-            </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
-                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
-              </a>
-              <div class="slide__modal">
+              <div class="gratitude-pic__modal">
                 <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
               </div>
             </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
                 <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
               </a>
-              <div class="slide__modal">
-                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
-              </div>
-            </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
-                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
-              </a>
-              <div class="slide__modal">
-                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
-              </div>
-            </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
-                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
-              </a>
-              <div class="slide__modal">
+              <div class="gratitude-pic__modal">
                 <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
               </div>
             </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
                 <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
               </a>
-              <div class="slide__modal">
-                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
-              </div>
-            </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
-                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
-              </a>
-              <div class="slide__modal">
-                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
-              </div>
-            </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
-                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
-              </a>
-              <div class="slide__modal">
+              <div class="gratitude-pic__modal">
                 <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
               </div>
             </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
                 <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
               </a>
-              <div class="slide__modal">
+              <div class="gratitude-pic__modal">
                 <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
               </div>
             </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
                 <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
               </a>
-              <div class="slide__modal">
+              <div class="gratitude-pic__modal">
                 <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
               </div>
             </div>
-            <div class="slide">
-              <a class="slide__thumbnail" href="#">
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
                 <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
               </a>
-              <div class="slide__modal">
+              <div class="gratitude-pic__modal">
+                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
+              </div>
+            </div>
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
+                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
+              </a>
+              <div class="gratitude-pic__modal">
+                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
+              </div>
+            </div>
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
+                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
+              </a>
+              <div class="gratitude-pic__modal">
+                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
+              </div>
+            </div>
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
+                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
+              </a>
+              <div class="gratitude-pic__modal">
+                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
+              </div>
+            </div>
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
+                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
+              </a>
+              <div class="gratitude-pic__modal">
+                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
+              </div>
+            </div>
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
+                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
+              </a>
+              <div class="gratitude-pic__modal">
+                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
+              </div>
+            </div>
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
+                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
+              </a>
+              <div class="gratitude-pic__modal">
+                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
+              </div>
+            </div>
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
+                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
+              </a>
+              <div class="gratitude-pic__modal">
+                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
+              </div>
+            </div>
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
+                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
+              </a>
+              <div class="gratitude-pic__modal">
+                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
+              </div>
+            </div>
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
+                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
+              </a>
+              <div class="gratitude-pic__modal">
+                <img src="img/review01.jpg" alt="Документ1" title="Документ1" />
+              </div>
+            </div>
+            <div class="gratitude-pic">
+              <a class="gratitude-pic__thumbnail" href="#">
+                <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
+              </a>
+              <div class="gratitude-pic__modal">
                 <img src="img/review02.jpg" alt="Документ1" title="Документ1" />
               </div>
             </div>
@@ -630,30 +631,55 @@
         </section>
         <!-- Right sidebar-->
         <aside class="sidebar sidebar--right">
-          <!-- Form application-->
-          <div class="sidebar__form">
-            <h3 class="sidebar__title">Оставить заявку</h3>
-            <div class="sidebar__form-text">
+          <!-- Sidebar form application-->
+          <section class="sidebar-form">
+            <h3 class="sidebar-form__title">Оставить заявку</h3>
+            <div class="sidebar-form__text">
               <p>Отправьте нам заявку, и наши эксперты помогут решить вопросы с оформлением документа:</p>
             </div>
             <!-- Form application-->
             <section class="form form--application">
               <form action="" method="" id="formApplication">
-                <div class="form-group field-question-production required">
+                <div class="form-group field-production required">
                   <input class="form__input" type="text" name="Продукция" placeholder="Наименование продукции*" />
                   <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
                 </div>
-                <div class="form-group field-question-name required has-error">
+                <div class="form-group field-name required has-error">
                   <input class="form__input" type="text" name="Имя" placeholder="Ваше имя*" />
                   <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
                 </div>
-                <div class="form-group field-question-phone required has-success">
+                <div class="form-group field-phone required has-success">
                   <input class="form__input" type="tel" name="Телефон" placeholder="Контактный телефон*" />
                   <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
                 </div>
-                <div class="form-group field-question-email required">
+                <div class="form-group field-email required">
                   <input class="form__input" type="email" name="Email" placeholder="Ваш e-mail*" />
                   <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                </div>
+                <div class="form-group field-country required">
+                  <select class="form__country-list">
+                    <option>Россия</option>
+                    <option>Беларусь</option>
+                    <option>Казахстан</option>
+                    <option>Украина</option>
+                    <option>Азербайджан</option>
+                    <option>Армения </option>
+                    <option>Грузия</option>
+                    <option>Молдавия</option>
+                  </select>
+                </div>
+                <div class="form-group field-region required">
+                  <select class="form__region-list">
+                    <option>Санкт-Петербург и Ленинградская область</option>
+                    <option>Москва и Московская область</option>
+                    <option>Новгородская область</option>
+                    <option>Псковская область</option>
+                    <option>Республика Карелия</option>
+                    <option>Мурманская область</option>
+                    <option>Калининградская область</option>
+                    <option>Вологодская область</option>
+                    <option>Тверская область</option>
+                  </select>
                 </div>
                 <div class="form-group recaptcha">
                   <div class="captcha"> </div>
@@ -662,30 +688,97 @@
                 <p class="help-block help-block-success">Ваша заявка отправлена</p>
               </form>
             </section>
-          </div>
+          </section>
+          <!-- Button call-->
           <div class="sidebar__btn">
             <a class="btn btn--call" href="page-form-call.html">Заказать звонок
               <span class="btn__icon"></span>
             </a>
           </div>
-          <!-- Contacts-->
-          <div class="sidebar__contacts">
-            <h3 class="sidebar__title sidebar__title--right">Контакты</h3>
-            <p class="sidebar__contacts-text">Для получения дополнительной информации обратитесь, пожалуйста, к вашему персональному менеджеру</p>
+          <!-- Contacts section-->
+          <section class="contacts-section">
+            <h3 class="contacts-section__title">Контакты</h3>
+            <p class="contacts-section__text">Для получения дополнительной информации обратитесь, пожалуйста, к вашему персональному менеджеру</p>
+            <div class="manager">
+              <div class="manager__img">
+                <img src="img/managers/maria.jpg" alt="Мария" title="Мария">
+              </div>
+              <div class="manager__info">
+                <h3 class="manager__name">Мария</h3>
+                <p class="manager__position">Старший менеджер</p>
+                <a class="manager__icq" href="http://www.icq.com/whitepages/cmd.php?uin=410-781-305&amp;amp;action=message">410-781-305</a>
+                <a class="manager__skype" href="skype:maria75577">maria75577</a>
+              </div>
+            </div>
+            <div class="manager">
+              <div class="manager__img">
+                <img src="img/managers/ksenia.jpg" alt="Ксения" title="Ксения">
+              </div>
+              <div class="manager__info">
+                <h3 class="manager__name">Ксения</h3>
+                <p class="manager__position">Менеджер</p>
+                <a class="manager__icq" href="http://www.icq.com/whitepages/cmd.php?uin=499-575-754&amp;amp;action=message">499-575-754</a>
+                <a class="manager__skype" href="skype:kseni4ka_schastliva">kseni4ka_schastliva</a>
+              </div>
+            </div>
+            <div class="manager">
+              <div class="manager__img">
+                <img src="img/managers/daria.jpg" alt="Дарья" title="Дарья">
+              </div>
+              <div class="manager__info">
+                <h3 class="manager__name">Дарья</h3>
+                <p class="manager__position">Менеджер</p>
+                <a class="manager__icq" href="http://www.icq.com/whitepages/cmd.php?uin=626-707-730&amp;amp;action=message">626-707-730</a>
+                <a class="manager__skype" href="skype:dariya-240186">dariya-240186</a>
+              </div>
+            </div>
+            <div class="manager">
+              <div class="manager__img">
+                <img src="img/managers/polina.jpg" alt="Полина" title="Полина">
+              </div>
+              <div class="manager__info">
+                <h3 class="manager__name">Полина</h3>
+                <p class="manager__position">Менеджер</p>
+                <a class="manager__icq" href="http://www.icq.com/whitepages/cmd.php?uin=688-458-325&amp;amp;action=message">688-458-325</a>
+                <a class="manager__skype" href="skype:eremeevapolina">eremeevapolina</a>
+              </div>
+            </div>
+            <div class="manager">
+              <div class="manager__img">
+                <img src="img/managers/mariana.jpg" alt="Марьяна" title="Марьяна">
+              </div>
+              <div class="manager__info">
+                <h3 class="manager__name">Марьяна</h3>
+                <p class="manager__position">Менеджер</p>
+                <a class="manager__icq" href="http://www.icq.com/whitepages/cmd.php?uin=647-809-603&amp;amp;action=message">647-809-603</a>
+                <a class="manager__skype" href="skype:maria.terenteva1">maria.terenteva1</a>
+              </div>
+            </div>
             <div class="manager">
               <div class="manager__img">
                 <img src="img/managers/marina.jpg" alt="Марина" title="Марина">
               </div>
               <div class="manager__info">
-                <h3 class="manager__name">Марина Маринина</h3>
-                <p class="manager__position">Старший менеджер</p>
-                <a class="manager__icq" href="http://www.icq.com/whitepages/cmd.php?uin=410781305&amp;amp;action=message" target="_blank">410-781-305</a>
-                <a class="manager__skype" href="skype:skypecall" target="_blank">skype: skypecall</a>
-                <a class="manager__tel" href="tel:+73833102045" target="_blank">+7 (383) 310-20-45</a>
-                <a class="manager__mail" href="mailto:info@rostestsibir.ru" target="_blank">info@rostestsibir.ru</a>
+                <h3 class="manager__name">Марина</h3>
+                <p class="manager__position">Менеджер</p>
+                <a class="manager__icq" href="http://www.icq.com/whitepages/cmd.php?uin=614-758-032&amp;amp;action=message">614-758-032</a>
+                <a class="manager__skype" href="skype:baygulovamarina">baygulovamarina</a>
               </div>
             </div>
-          </div>
+            <div class="manager">
+              <div class="manager__img">
+                <img src="img/managers/katerina.jpg" alt="Катерина" title="Катерина">
+              </div>
+              <div class="manager__info">
+                <h3 class="manager__name">Катерина</h3>
+                <p class="manager__position">Менеджер</p>
+                <a class="manager__icq" href="http://www.icq.com/whitepages/cmd.php?uin=671-272-855&amp;amp;action=message">671-272-855</a>
+                <a class="manager__skype" href="skype:grin_katrin">grin_katrin</a>
+              </div>
+            </div>
+            <a class="contacts-section__tel" href="tel:+73833102045" target="_blank">+7 (383) 310-20-45</a>
+            <a class="contacts-section__mail" href="mailto:info@rostestsibir.ru" target="_blank">info@rostestsibir.ru</a>
+          </section>
         </aside>
       </section>
     </main>
