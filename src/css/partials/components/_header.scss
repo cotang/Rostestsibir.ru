@@ -4,7 +4,7 @@
   background-repeat: repeat-y; 
   background-position: 50% 0;
 
-  &__pre{
+  &__inner{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -118,20 +118,22 @@
 .languages{
   display: inline-block;
   margin: 10px;
-  &__link{
+  span{
+    display: inline-block;
+    vertical-align: bottom;
+    color: $white; 
+    text-decoration: underline;
+    &:hover, &:focus{
+      color: $white; 
+    }           
+  }
+  a{
     color: $text-color;
     display: inline-block;
     vertical-align: bottom;
     &:hover, &:focus{
       color: $text-color; 
       text-decoration: underline;     
-    }
-    &--active{
-      color: $white; 
-      text-decoration: underline;
-      &:hover, &:focus{
-        color: $text-color; 
-      }           
     }
   }
 }

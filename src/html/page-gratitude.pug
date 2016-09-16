@@ -1,6 +1,5 @@
 extends partials/templates/template.pug
-//- include partials/abstracts/bemto/bemto.pug
-include partials/abstracts/mixins/_slide.pug
+include partials/abstracts/mixins/_gratitude-pic.pug
 
 block content
   +b.SECTION.page--gratitude
@@ -23,11 +22,11 @@ block content
         p Представляем вашему вниманию отзывы о центре сертификации «Ростест Сибирь» и официальные благодарственные письма от различных организаций, успешно сертифицировавших свою продукцию с помощью этого центра.
       include partials/components/share.pug
       
-      // Gallery
-      +b.gallery
+      // Gratitude gallery
+      +b.gratitude-gallery
         - for (var i = 1; i < 10; ++i){
-          +slide("review01.jpg","Документ1")
-          +slide("review02.jpg","Документ1")
+          +gratitude-pic("review01.jpg","Документ1")
+          +gratitude-pic("review02.jpg","Документ1")
         - } 
         
       // Bottom buttons

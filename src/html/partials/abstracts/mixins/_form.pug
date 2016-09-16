@@ -1,6 +1,6 @@
-- var application = [{name: 'application', id: 'formApplication', title : 'Заказать документ', text: '<p>Отправьте нам заявку, и наши эксперты помогут решить вопросы с оформлением документа:</p>', application: true, question: false, call: false, button: 'Отправить', success: 'Ваша заявка отправлена'}] 
-- var question = [{name: 'question', id: 'formQuestion', title : 'Задать вопрос', text: '<p>Заполните форму и отправьте свой вопрос эксперту.</p><p>Просим Вас указывать при обращении реальный e-mail, поскольку именно на него Вы и получите наш ответ.</p><p>Наш сотрудник проконсультирует вас абсолютно бесплатно. Расскажет, как как получить сертификат на продукцию в предсказуемые сроки, без неоправданных задержек, издержек и в полном соответствии с актуальным на сегодняшний день законодательством.</p><p>Так же связаться со специалистом вы сможете по телефону.</p>', application: false, question: true, call: false, button: 'Спросить', success: 'Ваш вопрос отправлен'}] 
-- var call = [{name: 'call', id: 'formCall', title : 'Заказать звонок', text: '<p>Даже в ситуациях (таможня, проверка и мн. др.), когда немедленно требуется дополнительная информация для решения возникших вопросов, Вы можете заказать нашим специалистам ответный звонок в нужное Вам время и полностью рассчитывать на своевременную и актуальную информационно-правовую поддержку центра сертификации «Ростест Сибирь».</p>', application: false, question: false, call: true, button: 'Заказать звонок', success: 'Ваша заявка отправлена'}] 
+- var application = [{name: 'application', id: 'formApplication', title : 'Заказать документ', text: '<p>Отправьте нам заявку, и наши эксперты помогут решить вопросы с оформлением документа:</p>', application: true, button: 'Отправить', success: 'Ваша заявка отправлена'}] 
+- var question = [{name: 'question', id: 'formQuestion', title : 'Задать вопрос', text: '<p>Заполните форму и отправьте свой вопрос эксперту.</p><p>Просим Вас указывать при обращении реальный e-mail, поскольку именно на него Вы и получите наш ответ.</p><p>Наш сотрудник проконсультирует вас абсолютно бесплатно. Расскажет, как как получить сертификат на продукцию в предсказуемые сроки, без неоправданных задержек, издержек и в полном соответствии с актуальным на сегодняшний день законодательством.</p><p>Так же связаться со специалистом вы сможете по телефону.</p>', question: true, button: 'Спросить', success: 'Ваш вопрос отправлен'}] 
+- var call = [{name: 'call', id: 'formCall', title : 'Заказать звонок', text: '<p>Даже в ситуациях (таможня, проверка и мн. др.), когда немедленно требуется дополнительная информация для решения возникших вопросов, Вы можете заказать нашим специалистам ответный звонок в нужное Вам время и полностью рассчитывать на своевременную и актуальную информационно-правовую поддержку центра сертификации «Ростест Сибирь».</p>', call: true, button: 'Заказать звонок', success: 'Ваша заявка отправлена'}] 
 
 
 mixin form(items)
@@ -11,45 +11,39 @@ mixin form(items)
         //- +e.H3.title #{item.title}
         //- +e.text !{item.text}
         if item.application
-          .form-group.field-question-production.required
+          .form-group.field-production.required
             +e.INPUT.input(type='text', name='Продукция', placeholder='Наименование продукции*') 
             p.help-block.help-block-error Ошибка заполнения поля формы
-        .form-group.field-question-name.required.has-error
+        .form-group.field-name.required.has-error
           +e.INPUT.input(type='text', name='Имя', placeholder='Ваше имя*')
           p.help-block.help-block-error Ошибка заполнения поля формы
-        .form-group.field-question-phone.required.has-success
+        .form-group.field-phone.required.has-success
           +e.INPUT.input(type='tel', name='Телефон', placeholder='Контактный телефон*')
           p.help-block.help-block-error Ошибка заполнения поля формы
-        .form-group.field-question-email.required
+        .form-group.field-email.required
           +e.INPUT.input(type='email', name='Email', placeholder='Ваш e-mail*')
           p.help-block.help-block-error Ошибка заполнения поля формы
-        //- .form-group.required
-        //-   +e.region
-        //-     +e.INPUT.input(type='text', name='Страна', placeholder='Страна*')
-        //-     p.help-block.help-block-error Ошибка заполнения поля формы
-        //-     +e.UL.region-list
-        //-       li.bolder Россия
-        //-       li.bolder Беларусь
-        //-       li.bolder Казахстан
-        //-       li Украина
-        //-       li Азербайджан
-        //-       li Армения    
-        //-       li Грузия
-        //-       li Молдавия
-        //- .form-group.required
-        //-   +e.region
-        //-     +e.INPUT.input(type='text', name='Регион', placeholder='Регион*')
-        //-     p.help-block.help-block-error Ошибка заполнения поля формы
-        //-     +e.UL.region-list
-        //-       li Санкт-Петербург и Ленинградская область
-        //-       li Москва и Московская область
-        //-       li Новгородская область
-        //-       li Псковская область
-        //-       li Республика Карелия
-        //-       li Мурманская область
-        //-       li Калининградская область
-        //-       li Вологодская область
-        //-       li Тверская область
+        .form-group.field-country.required
+          +e.SELECT.country-list
+            option Россия
+            option Беларусь
+            option Казахстан
+            option Украина
+            option Азербайджан
+            option Армения    
+            option Грузия
+            option Молдавия
+        .form-group.field-region.required
+          +e.SELECT.region-list
+            option Санкт-Петербург и Ленинградская область
+            option Москва и Московская область
+            option Новгородская область
+            option Псковская область
+            option Республика Карелия
+            option Мурманская область
+            option Калининградская область
+            option Вологодская область
+            option Тверская область
         if item.question
           .form-group.required
             +e.TEXTAREA.textarea(type='text', name='Ваш вопрос', placeholder='Ваш вопрос*')

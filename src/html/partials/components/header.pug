@@ -2,7 +2,7 @@ include ../abstracts/bemto/bemto.pug
 
 // Header
 +b.HEADER.header
-  +e.pre
+  +e.inner
     +e.block
       // City choise
       +b.city-choise
@@ -23,9 +23,9 @@ include ../abstracts/bemto/bemto.pug
             +e.INPUT.input(type='text', name='Поиск', placeholder='Введите ваш запрос')
       // Languages
       +b.languages
-        +e.A.link--active(href="#") RU 
+        span RU 
         != " / "
-        +e.A.link(href="#") EN 
+        a(href="#") EN 
   +e.wrapper
     +e.logo
       // Logo

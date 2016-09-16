@@ -1,26 +1,28 @@
+include ../abstracts/mixins/_manager.pug
 include ../abstracts/bemto/bemto.pug
 
 +b.ASIDE.sidebar--right
-  // Form application
-  +e.form
+  // Sidebar form application
+  +b.SECTION.sidebar-form
     +e.H3.title Оставить заявку
-    +e.form-text
+    +e.text
       p Отправьте нам заявку, и наши эксперты помогут решить вопросы с оформлением документа:
     include form--application.pug
+  // Button call
   +e.sidebar__btn
     +b.A.btn--call(href="page-form-call.html") Заказать звонок
       +e.icon
-  // Contacts
-  +e.sidebar__contacts
-    +e.H3.sidebar__title--right Контакты
-    +e.P.sidebar__contacts-text Для получения дополнительной информации обратитесь, пожалуйста, к вашему персональному менеджеру
-    +b.manager
-      +e.img
-        img(src="img/managers/marina.jpg" alt="Марина" title="Марина")
-      +e.info
-        +e.H3.name Марина Маринина
-        +e.P.position Старший менеджер
-        +e.A.icq(href= "http://www.icq.com/whitepages/cmd.php?uin=410781305&action=message", target="_blank") 410-781-305
-        +e.A.skype(href= "skype:skypecall", target="_blank") skype: skypecall
-        +e.A.tel(href= "tel:+73833102045", target="_blank") +7 (383) 310-20-45
-        +e.A.mail(href="mailto:info@rostestsibir.ru", target="_blank") info@rostestsibir.ru
+  // Contacts section
+  +b.SECTION.contacts-section
+    +e.H3.title Контакты
+    +e.P.text Для получения дополнительной информации обратитесь, пожалуйста, к вашему персональному менеджеру
+    +manager("Мария", "maria.jpg", "Старший менеджер", "410-781-305", "maria75577")
+    +manager("Ксения", "ksenia.jpg", "Менеджер", "499-575-754", "kseni4ka_schastliva")
+    +manager("Дарья", "daria.jpg", "Менеджер", "626-707-730", "dariya-240186")
+    +manager("Полина", "polina.jpg", "Менеджер", "688-458-325", "eremeevapolina")
+    +manager("Марьяна", "mariana.jpg", "Менеджер", "647-809-603", "maria.terenteva1")
+    +manager("Марина", "marina.jpg", "Менеджер", "614-758-032", "baygulovamarina")
+    +manager("Катерина", "katerina.jpg", "Менеджер", "671-272-855", "grin_katrin")
+    +e.A.tel(href= "tel:+73833102045", target="_blank") +7 (383) 310-20-45
+    +e.A.mail(href="mailto:info@rostestsibir.ru", target="_blank") info@rostestsibir.ru
+

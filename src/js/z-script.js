@@ -51,21 +51,6 @@ jQuery(document).ready(function($){
       );
   }); 
 
-
-    /* списки в формах */
-  var regionInput = $('.form__region input');
-  var regionList = $('.form__region-list');    
-    $(regionInput).click(function() { 
-      $(this).closest('.form__region').find(regionList).show();   
-    });  
-    $(regionList).mouseleave(function(){
-      $(this).fadeOut('normal');
-    }).find('li').click(function(){
-      var regionText = $(this).text();
-      $(this).closest('.form__region').find(regionInput).val(regionText);
-      $(this).closest(regionList).mouseleave();
-    }); 
-
   /* кнопка "наверх" */
   $('.up').click(function(e) {
       e.preventDefault();
